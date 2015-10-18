@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -28,7 +28,7 @@
                                 <animations/>
                                 <state key="normal" title="Check BS"/>
                                 <connections>
-                                    <segue destination="RYF-Ad-8Q8" kind="show" id="6ZU-4q-wJF"/>
+                                    <segue destination="wzj-yM-a6Q" kind="showDetail" id="4FC-ME-BRN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,13 +53,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-jb-4Mg">
-                                <rect key="frame" x="128" y="323" width="119" height="56"/>
-                                <state key="normal" title="Input Text"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAs-iT-HtU">
-                                <rect key="frame" x="149" y="387" width="77" height="30"/>
+                                <rect key="frame" x="253" y="569" width="77" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Take Photo"/>
+                                <connections>
+                                    <segue destination="RYF-Ad-8Q8" kind="show" id="S4g-Yq-sQ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-jb-4Mg">
+                                <rect key="frame" x="20" y="556" width="119" height="56"/>
+                                <animations/>
+                                <state key="normal" title="Input Text"/>
+                                <connections>
+                                    <segue destination="xMj-Na-oYe" kind="show" id="3eg-PG-zC9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -74,7 +82,7 @@
         <!--Analyse Input-->
         <scene sceneID="K81-gS-B4O">
             <objects>
-                <viewController title="Analyse Input" id="xMj-Na-oYe" sceneMemberID="viewController">
+                <viewController title="Analyse Input" id="xMj-Na-oYe" customClass="TextInputViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kuz-X3-qFL"/>
                         <viewControllerLayoutGuide type="bottom" id="p52-Hn-x5a"/>
@@ -85,18 +93,26 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clg-Kt-Fuh">
                                 <rect key="frame" x="92" y="533" width="191" height="54"/>
+                                <animations/>
                                 <state key="normal" title="Analyse Text"/>
+                                <connections>
+                                    <action selector="analyzeText:" destination="xMj-Na-oYe" eventType="touchUpInside" id="fOo-Bn-KcB"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-rc-L3R">
-                                <rect key="frame" x="139" y="178" width="97" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Placeholder text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-6M-FxL">
+                                <rect key="frame" x="67" y="97" width="240" height="128"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="inputTextView" destination="fsq-6M-FxL" id="ikc-SG-ZDB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xN-Q5-fqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

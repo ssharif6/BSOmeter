@@ -10,6 +10,7 @@ import UIKit
 
 class TextInputViewController: UIViewController {
 
+    @IBOutlet weak var inputTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,9 @@ class TextInputViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func analyzeText(sender: AnyObject) {
+        // Access backend.
+    }
 
     /*
     // MARK: - Navigation
