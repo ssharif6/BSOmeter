@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F4F0A8549E7552478DF13C0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */; };
+		371C8F851BD443D800C84FDE /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C8F841BD443D800C84FDE /* KDCircularProgress.swift */; settings = {ASSET_TAGS = (); }; };
 		37DD9E401BD425DC0049F879 /* UI Assets in Resources */ = {isa = PBXBuildFile; fileRef = 37DD9E3F1BD425DC0049F879 /* UI Assets */; settings = {ASSET_TAGS = (); }; };
 		855ECAA31BD36AC300CD9264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAA21BD36AC300CD9264 /* AppDelegate.swift */; };
 		855ECAA51BD36AC300CD9264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAA41BD36AC300CD9264 /* ViewController.swift */; };
@@ -20,6 +21,8 @@
 		856495FC1BD375670066437F /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FB1BD375670066437F /* TextInputViewController.swift */; };
 		856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FD1BD375A80066437F /* ResultsPageViewController.swift */; };
 		856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */; };
+		8564960C1BD4469E0066437F /* libCloudinary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8564960B1BD4469E0066437F /* libCloudinary.a */; settings = {ASSET_TAGS = (); }; };
+		8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564960D1BD4482B0066437F /* PhotoPoster.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		34A95F2A54DDA21E29B2BF26 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		371C8F841BD443D800C84FDE /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 		37DD9E3F1BD425DC0049F879 /* UI Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "UI Assets"; sourceTree = "<group>"; };
 		4D413BD498CB8A6207A09202 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		855ECA9F1BD36AC300CD9264 /* BSOmeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSOmeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +64,8 @@
 		856495FB1BD375670066437F /* TextInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputViewController.swift; sourceTree = "<group>"; };
 		856495FD1BD375A80066437F /* ResultsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsPageViewController.swift; sourceTree = "<group>"; };
 		856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnalysisViewController.swift; sourceTree = "<group>"; };
+		8564960B1BD4469E0066437F /* libCloudinary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCloudinary.a; sourceTree = "<group>"; };
+		8564960D1BD4482B0066437F /* PhotoPoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPoster.swift; sourceTree = "<group>"; };
 		F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F4F0A8549E7552478DF13C0 /* Pods.framework in Frameworks */,
+				8564960C1BD4469E0066437F /* libCloudinary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +107,7 @@
 		67617A7A7BB0EF59455C9680 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8564960B1BD4469E0066437F /* libCloudinary.a */,
 				F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -162,11 +170,13 @@
 		856495F81BD374C10066437F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				371C8F841BD443D800C84FDE /* KDCircularProgress.swift */,
 				855ECAA41BD36AC300CD9264 /* ViewController.swift */,
 				856495F61BD374AE0066437F /* RecordViewController.swift */,
 				856495FB1BD375670066437F /* TextInputViewController.swift */,
 				856495FD1BD375A80066437F /* ResultsPageViewController.swift */,
 				856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */,
+				8564960D1BD4482B0066437F /* PhotoPoster.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -365,11 +375,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				856495F71BD374AE0066437F /* RecordViewController.swift in Sources */,
+				8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */,
 				856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */,
 				855ECAA51BD36AC300CD9264 /* ViewController.swift in Sources */,
 				855ECAA31BD36AC300CD9264 /* AppDelegate.swift in Sources */,
 				856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */,
 				856495FC1BD375670066437F /* TextInputViewController.swift in Sources */,
+				371C8F851BD443D800C84FDE /* KDCircularProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,8 +524,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = BSOmeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Dubhacks.BSOmeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -527,8 +544,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = BSOmeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Dubhacks.BSOmeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
