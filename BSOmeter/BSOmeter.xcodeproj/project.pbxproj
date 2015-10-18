@@ -15,11 +15,11 @@
 		855ECAAD1BD36AC300CD9264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855ECAAB1BD36AC300CD9264 /* LaunchScreen.storyboard */; };
 		855ECAB81BD36AC300CD9264 /* BSOmeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAB71BD36AC300CD9264 /* BSOmeterTests.swift */; };
 		855ECAC31BD36AC300CD9264 /* BSOmeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAC21BD36AC300CD9264 /* BSOmeterUITests.swift */; };
-		856495F71BD374AE0066437F /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495F61BD374AE0066437F /* RecordViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		856495FA1BD3750A0066437F /* AudioConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495F91BD3750A0066437F /* AudioConfirmationViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		856495FC1BD375670066437F /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FB1BD375670066437F /* TextInputViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FD1BD375A80066437F /* ResultsPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		856495F71BD374AE0066437F /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495F61BD374AE0066437F /* RecordViewController.swift */; };
+		856495FA1BD3750A0066437F /* AudioConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495F91BD3750A0066437F /* AudioConfirmationViewController.swift */; };
+		856495FC1BD375670066437F /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FB1BD375670066437F /* TextInputViewController.swift */; };
+		856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FD1BD375A80066437F /* ResultsPageViewController.swift */; };
+		856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +237,7 @@
 		855ECA971BD36AC300CD9264 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Dubhacks;
 				TargetAttributes = {
