@@ -25,6 +25,7 @@ public class KDCircularProgress: UIView {
         }
     }
     
+    
     private struct UtilityFunctions {
         static func Clamp<T: Comparable>(value: T, minMax: (T, T)) -> T {
             let (min, max) = minMax
