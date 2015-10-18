@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Parse
 
-class TextInputViewController: UIViewController {
+class TextInputViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var inputTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputTextView.delegate = self
+        
 
         // Do any additional setup after loading the view.
     }
@@ -22,18 +25,26 @@ class TextInputViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
     @IBAction func analyzeText(sender: AnyObject) {
         // Access backend.
-    }
+        let parseInputText = PFObject(className: "inputTextParseClass")
+        parseInputText["inputText"] = inputTextView.text
+        parseInputText.saveInBackgroundWithBlock { (success, error) -> Void in
+            if success {
+                // Object is saved
+            } else {
+                print(error?.description) // Error check
+            }
+        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }

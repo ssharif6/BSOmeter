@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class ResultsPageViewController: UIViewController {
 
@@ -19,6 +20,20 @@ class ResultsPageViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func retrieveBsRanking() {
+        let query = PFQuery(className: "inputTextParseClass")
+        query.getObjectInBackgroundWithId("someUniqueID") { (BSRanking, error) -> Void in
+            if error == nil && BSRanking != nil {
+                print(BSRanking)
+                // Do Something
+                var score = BSRanking?.objectForKey("score")
+                
+            } else {
+                print(error)
+            }
+        }
     }
     
 
