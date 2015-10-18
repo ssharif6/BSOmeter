@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F4F0A8549E7552478DF13C0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */; };
+		371C8F851BD443D800C84FDE /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C8F841BD443D800C84FDE /* KDCircularProgress.swift */; settings = {ASSET_TAGS = (); }; };
 		37DD9E401BD425DC0049F879 /* UI Assets in Resources */ = {isa = PBXBuildFile; fileRef = 37DD9E3F1BD425DC0049F879 /* UI Assets */; settings = {ASSET_TAGS = (); }; };
 		855ECAA31BD36AC300CD9264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAA21BD36AC300CD9264 /* AppDelegate.swift */; };
 		855ECAA51BD36AC300CD9264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAA41BD36AC300CD9264 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		34A95F2A54DDA21E29B2BF26 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		371C8F841BD443D800C84FDE /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 		37DD9E3F1BD425DC0049F879 /* UI Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "UI Assets"; sourceTree = "<group>"; };
 		4D413BD498CB8A6207A09202 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		855ECA9F1BD36AC300CD9264 /* BSOmeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSOmeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +164,7 @@
 		856495F81BD374C10066437F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				371C8F841BD443D800C84FDE /* KDCircularProgress.swift */,
 				855ECAA41BD36AC300CD9264 /* ViewController.swift */,
 				856495F61BD374AE0066437F /* RecordViewController.swift */,
 				856495FB1BD375670066437F /* TextInputViewController.swift */,
@@ -370,6 +373,7 @@
 				855ECAA31BD36AC300CD9264 /* AppDelegate.swift in Sources */,
 				856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */,
 				856495FC1BD375670066437F /* TextInputViewController.swift in Sources */,
+				371C8F851BD443D800C84FDE /* KDCircularProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
