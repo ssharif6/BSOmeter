@@ -7,11 +7,11 @@ import pg8000 as pg8k
 from db_scripts import Db
 
 conn = pg8k.connect(
-            host="",
+            host="politidb.cm8mhypepst9.us-west-2.rds.amazonaws.com",
             port=5432,
-            user="",
-            password="",
-            database=""
+            user="trumpster",
+            password="bushdidnothingwrong",
+            database="postgres"
         )
 
 d = Db(conn)
