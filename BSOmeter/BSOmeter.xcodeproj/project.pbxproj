@@ -242,6 +242,7 @@
 				TargetAttributes = {
 					855ECA9E1BD36AC300CD9264 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = YVWC7B99QW;
 					};
 					855ECAB21BD36AC300CD9264 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -500,10 +501,13 @@
 			baseConfigurationReference = 4D413BD498CB8A6207A09202 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BSOmeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dubhacks.BSOmeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -512,10 +516,13 @@
 			baseConfigurationReference = 34A95F2A54DDA21E29B2BF26 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BSOmeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dubhacks.BSOmeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

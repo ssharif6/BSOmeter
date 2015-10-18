@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14E-OC-N4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188.5" y="1100.5"/>
+            <point key="canvasLocation" x="235.5" y="1086.5"/>
         </scene>
         <!--Analyse Input-->
         <scene sceneID="K81-gS-B4O">
@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xN-Q5-fqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="610.5" y="1100.5"/>
+            <point key="canvasLocation" x="648.5" y="1086.5"/>
         </scene>
         <!--Results-->
         <scene sceneID="uGw-CB-GqI">
@@ -82,12 +82,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpx-yU-feR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140.5" y="1100.5"/>
+            <point key="canvasLocation" x="1054.5" y="1086.5"/>
         </scene>
         <!--Analyze Photo-->
         <scene sceneID="ajP-v6-xPu">
             <objects>
-                <viewController title="Analyze Photo" id="RYF-Ad-8Q8" sceneMemberID="viewController">
+                <viewController title="Analyze Photo" id="RYF-Ad-8Q8" customClass="PhotoAnalysisViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gbj-uv-uCt"/>
                         <viewControllerLayoutGuide type="bottom" id="G8l-dy-7vR"/>
@@ -95,54 +95,23 @@
                     <view key="view" contentMode="scaleToFill" id="N1D-Cx-gre">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBH-hp-eg6">
+                                <rect key="frame" x="46" y="100" width="283" height="173"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pictureImageview" destination="EBH-hp-eg6" id="5iV-HT-BCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="610.5" y="1834.5"/>
-        </scene>
-        <!--Record Audio-->
-        <scene sceneID="2Ej-NA-RAO">
-            <objects>
-                <viewController title="Record Audio" id="syx-UA-wve" customClass="RecordViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hec-Ch-Tof"/>
-                        <viewControllerLayoutGuide type="bottom" id="VKJ-eP-3OD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Lrx-8f-GFP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nND-DJ-cMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="715.5" y="337.5"/>
-        </scene>
-        <!--Audio Confirmation-->
-        <scene sceneID="PSn-h8-sGR">
-            <objects>
-                <viewController title="Audio Confirmation" id="92W-6R-Bdn" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ru1-7Q-5Jf"/>
-                        <viewControllerLayoutGuide type="bottom" id="6lz-CC-v8m"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Uhd-sA-v0e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyb-yp-IEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1134.5" y="337.5"/>
+            <point key="canvasLocation" x="648.5" y="1814.5"/>
         </scene>
     </scenes>
 </document>
