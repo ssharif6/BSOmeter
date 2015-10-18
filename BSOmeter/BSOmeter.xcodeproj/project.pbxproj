@@ -16,7 +16,6 @@
 		855ECAB81BD36AC300CD9264 /* BSOmeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAB71BD36AC300CD9264 /* BSOmeterTests.swift */; };
 		855ECAC31BD36AC300CD9264 /* BSOmeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAC21BD36AC300CD9264 /* BSOmeterUITests.swift */; };
 		856495F71BD374AE0066437F /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495F61BD374AE0066437F /* RecordViewController.swift */; };
-		856495FA1BD3750A0066437F /* AudioConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495F91BD3750A0066437F /* AudioConfirmationViewController.swift */; };
 		856495FC1BD375670066437F /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FB1BD375670066437F /* TextInputViewController.swift */; };
 		856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FD1BD375A80066437F /* ResultsPageViewController.swift */; };
 		856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */; };
@@ -56,7 +55,6 @@
 		855ECAC21BD36AC300CD9264 /* BSOmeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSOmeterUITests.swift; sourceTree = "<group>"; };
 		855ECAC41BD36AC300CD9264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		856495F61BD374AE0066437F /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
-		856495F91BD3750A0066437F /* AudioConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioConfirmationViewController.swift; sourceTree = "<group>"; };
 		856495FB1BD375670066437F /* TextInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputViewController.swift; sourceTree = "<group>"; };
 		856495FD1BD375A80066437F /* ResultsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsPageViewController.swift; sourceTree = "<group>"; };
 		856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnalysisViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 			children = (
 				855ECAA41BD36AC300CD9264 /* ViewController.swift */,
 				856495F61BD374AE0066437F /* RecordViewController.swift */,
-				856495F91BD3750A0066437F /* AudioConfirmationViewController.swift */,
 				856495FB1BD375670066437F /* TextInputViewController.swift */,
 				856495FD1BD375A80066437F /* ResultsPageViewController.swift */,
 				856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */,
@@ -358,7 +355,6 @@
 				856495F71BD374AE0066437F /* RecordViewController.swift in Sources */,
 				856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */,
 				855ECAA51BD36AC300CD9264 /* ViewController.swift in Sources */,
-				856495FA1BD3750A0066437F /* AudioConfirmationViewController.swift in Sources */,
 				855ECAA31BD36AC300CD9264 /* AppDelegate.swift in Sources */,
 				856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */,
 				856495FC1BD375670066437F /* TextInputViewController.swift in Sources */,
