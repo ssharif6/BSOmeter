@@ -113,6 +113,7 @@
                                 <state key="normal" title="Analyse Text" image="AnalyzeTextButton.png"/>
                                 <connections>
                                     <action selector="analyzeText:" destination="xMj-Na-oYe" eventType="touchUpInside" id="fOo-Bn-KcB"/>
+                                    <segue destination="x3d-M8-Sjt" kind="show" identifier="toResultsSegue" id="DkS-l2-uNQ"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Placeholder text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-6M-FxL">
@@ -229,6 +230,7 @@
                                 <state key="normal" title="Analyze" image="next copy 4"/>
                                 <connections>
                                     <action selector="AnalyzeImageAction:" destination="RYF-Ad-8Q8" eventType="touchUpInside" id="mdB-Cp-8Kc"/>
+                                    <segue destination="x3d-M8-Sjt" kind="show" id="b8X-4z-dYW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -243,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="2024"/>
+            <point key="canvasLocation" x="1325" y="1907"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iWw-Se-MQk">
@@ -275,4 +277,7 @@
         <image name="TryAnotherStatement.png" width="414" height="88"/>
         <image name="next copy 4" width="207" height="69"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="b8X-4z-dYW"/>
+    </inferredMetricsTieBreakers>
 </document>
