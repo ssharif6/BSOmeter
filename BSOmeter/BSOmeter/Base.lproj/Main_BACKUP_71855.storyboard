@@ -163,25 +163,25 @@
                                 <rect key="frame" x="30" y="216" width="329" height="320"/>
                                 <subviews>
 <<<<<<< HEAD
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0K-rI-IUE">
-                                        <rect key="frame" x="116" y="87" width="96" height="53"/>
-=======
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0K-rI-IUE">
                                         <rect key="frame" x="146" y="111" width="121" height="53"/>
                                         <animations/>
->>>>>>> 0673f88a28878bb9bb21d11c9636064bd6c786f8
+=======
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0K-rI-IUE">
+                                        <rect key="frame" x="116" y="87" width="96" height="53"/>
+>>>>>>> 9788ad704f5f2cfa03515485668130521de62c0f
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
 <<<<<<< HEAD
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="True" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWL-4d-ijY">
-                                        <rect key="frame" x="116" y="162" width="97" height="60"/>
-=======
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Truth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWL-4d-ijY">
                                         <rect key="frame" x="150" y="190" width="114" height="60"/>
                                         <animations/>
->>>>>>> 0673f88a28878bb9bb21d11c9636064bd6c786f8
+=======
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="True" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWL-4d-ijY">
+                                        <rect key="frame" x="116" y="162" width="97" height="60"/>
+>>>>>>> 9788ad704f5f2cfa03515485668130521de62c0f
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -275,10 +275,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
-            <point key="canvasLocation" x="1325" y="1907"/>
-=======
             <point key="canvasLocation" x="1240" y="2026"/>
->>>>>>> 0673f88a28878bb9bb21d11c9636064bd6c786f8
+=======
+            <point key="canvasLocation" x="1325" y="1907"/>
+>>>>>>> 9788ad704f5f2cfa03515485668130521de62c0f
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iWw-Se-MQk">
