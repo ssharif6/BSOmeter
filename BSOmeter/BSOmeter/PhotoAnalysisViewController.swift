@@ -120,6 +120,8 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
         }
     }
     
+    
+    
 
     /*
     // MARK: - Navigation
