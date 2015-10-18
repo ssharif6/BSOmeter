@@ -40,6 +40,7 @@
             </objects>
             <point key="canvasLocation" x="235.5" y="337.5"/>
         </scene>
+<<<<<<< HEAD
         <!--Text Option-->
         <scene sceneID="Vwr-HG-XvS">
             <objects>
@@ -60,6 +61,8 @@
             </objects>
             <point key="canvasLocation" x="235.5" y="1086.5"/>
         </scene>
+=======
+>>>>>>> d3890e8e1986bc2bfc91f4f4c2e5ebd87900618f
         <!--Analyse Input-->
         <scene sceneID="K81-gS-B4O">
             <objects>
@@ -124,10 +127,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBH-hp-eg6">
                                 <rect key="frame" x="46" y="100" width="283" height="173"/>
                                 <animations/>
                             </imageView>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJF-Kf-n6H">
+                                <rect key="frame" x="147" y="586" width="80" height="30"/>
+                                <state key="normal" title="Snap Photo"/>
+                            </button>
+>>>>>>> d3890e8e1986bc2bfc91f4f4c2e5ebd87900618f
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -139,7 +149,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="648.5" y="1814.5"/>
+=======
+            <point key="canvasLocation" x="610.5" y="1834.5"/>
+>>>>>>> d3890e8e1986bc2bfc91f4f4c2e5ebd87900618f
         </scene>
     </scenes>
 </document>
