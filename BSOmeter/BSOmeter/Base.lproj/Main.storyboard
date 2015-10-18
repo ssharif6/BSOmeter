@@ -16,14 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
-                                <rect key="frame" x="174" y="244" width="67" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Check BS"/>
-                                <connections>
-                                    <segue destination="wzj-yM-a6Q" kind="showDetail" id="4FC-ME-BRN"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSOMeter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="41" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-z2-eXa">
                                 <rect key="frame" x="27" y="64" width="361" height="97"/>
                                 <animations/>
@@ -31,6 +23,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
+                                <rect key="frame" x="0.0" y="424" width="415" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Check BS" image="CheckBSHomePage.png"/>
+                                <connections>
+                                    <segue destination="wzj-yM-a6Q" kind="showDetail" id="4FC-ME-BRN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235.5" y="337.5"/>
+            <point key="canvasLocation" x="235" y="337"/>
         </scene>
         <!--Text Option-->
         <scene sceneID="Vwr-HG-XvS">
@@ -53,10 +53,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-jb-4Mg">
-                                <rect key="frame" x="58" y="576" width="68" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-jb-4Mg">
+                                <rect key="frame" x="0.0" y="555" width="213" height="70"/>
                                 <animations/>
-                                <state key="normal" title="Input Text"/>
+                                <state key="normal" title="Input Text" image="InputTextButton.png"/>
                                 <connections>
                                     <segue destination="xMj-Na-oYe" kind="show" id="3eg-PG-zC9"/>
                                 </connections>
@@ -68,14 +68,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAs-iT-HtU">
-                                <rect key="frame" x="256" y="576" width="77" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAs-iT-HtU">
+                                <rect key="frame" x="204" y="556" width="210" height="69"/>
                                 <animations/>
-                                <state key="normal" title="Take Photo"/>
+                                <state key="normal" title="Take Photo" image="Camera Button.png"/>
                                 <connections>
                                     <segue destination="RYF-Ad-8Q8" kind="show" id="S4g-Yq-sQ2"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="BSOMeter.png" translatesAutoresizingMaskIntoConstraints="NO" id="sqI-Zc-JQG">
+                                <rect key="frame" x="56" y="412" width="101" height="101"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Camera Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-MX-J0m">
+                                <rect key="frame" x="242" y="412" width="135" height="101"/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -104,10 +110,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clg-Kt-Fuh">
-                                <rect key="frame" x="164" y="527" width="87" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clg-Kt-Fuh">
+                                <rect key="frame" x="84" y="538" width="212" height="69"/>
                                 <animations/>
-                                <state key="normal" title="Analyse Text"/>
+                                <state key="normal" title="Analyse Text" image="AnalyzeTextButton.png"/>
                                 <connections>
                                     <action selector="analyzeText:" destination="xMj-Na-oYe" eventType="touchUpInside" id="fOo-Bn-KcB"/>
                                 </connections>
@@ -123,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xN-Q5-fqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="1140"/>
+            <point key="canvasLocation" x="760" y="1148"/>
         </scene>
         <!--Results-->
         <scene sceneID="uGw-CB-GqI">
@@ -144,10 +150,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-hl-tgk">
-                                <rect key="frame" x="131" y="592" width="152" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-hl-tgk">
+                                <rect key="frame" x="0.0" y="581" width="414" height="88"/>
                                 <animations/>
-                                <state key="normal" title="Try another statement"/>
+                                <state key="normal" title="Try another statement" image="TryAnotherStatement.png"/>
                             </button>
                         </subviews>
                         <animations/>
@@ -175,10 +181,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="547"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mml-lP-gtf">
-                                <rect key="frame" x="178" y="644" width="59" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mml-lP-gtf">
+                                <rect key="frame" x="103" y="624" width="209" height="69"/>
                                 <animations/>
-                                <state key="normal" title="Take Pic"/>
+                                <state key="normal" title="Take Pic" image="Camera Button.png"/>
                                 <connections>
                                     <action selector="takePhoto:" destination="RYF-Ad-8Q8" eventType="touchUpInside" id="380-Tj-Mm2"/>
                                 </connections>
@@ -213,4 +219,13 @@
             <point key="canvasLocation" x="660" y="2024"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AnalyzeTextButton.png" width="207" height="69"/>
+        <image name="BSOMeter.png" width="101" height="101"/>
+        <image name="Camera Button.png" width="207" height="69"/>
+        <image name="Camera Icon.png" width="135" height="101"/>
+        <image name="CheckBSHomePage.png" width="414" height="88"/>
+        <image name="InputTextButton.png" width="207" height="69"/>
+        <image name="TryAnotherStatement.png" width="414" height="88"/>
+    </resources>
 </document>
