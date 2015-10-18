@@ -11,7 +11,6 @@ import SwiftyJSON
 
 class PhotoAnalysisViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    @IBOutlet weak var textFromOCR: UITextView!
     var didCameraLoad: Bool = false
     // OCR Settings
     let apikey = "4e21e91d-5107-43ed-8744-1797b084b002"
@@ -30,7 +29,6 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         self.didCameraLoad = true
-        textFromOCR.hidden = true
     
     }
     
@@ -48,50 +46,50 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
         
     }
     
-    func postAndGetResult() {
-        let request = NSMutableURLRequest(URL: endpoint)
-        request.HTTPMethod = "POST"
-        
-        //change mode here according to type of the image
-        let payload = "apikey=\(apikey)&url=\(ocrImageUrl)\(mode1)".dataUsingEncoding(NSUTF8StringEncoding)
-
-        let task = NSURLSession.sharedSession().uploadTaskWithRequest(request, fromData: payload) { (data, response, error) -> Void in
-            if let value = data {
-                do {
-                    let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
-                    
-                    let json = JSON(jsonObject)
-                    if let ocr_results = json["text_block"][0]["text"].string {
-                        print(ocr_results)
-                        
-                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                            self.textFromOCR.hidden = true
-                            self.textFromOCR.text = ocr_results
-                        })
-                    }
-                } catch let error as NSError {
-                    print("json error: \(error.localizedDescription)")
-                }
-            }
-        }
-        task.resume()
-    }
+//    func postAndGetResult() {
+//        let request = NSMutableURLRequest(URL: endpoint)
+//        request.HTTPMethod = "POST"
+//        
+//        //change mode here according to type of the image
+//        let payload = "apikey=\(apikey)&url=\(ocrImageUrl)\(mode1)".dataUsingEncoding(NSUTF8StringEncoding)
+//
+//        let task = NSURLSession.sharedSession().uploadTaskWithRequest(request, fromData: payload) { (data, response, error) -> Void in
+//            if let value = data {
+//                do {
+//                    let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+//                    
+//                    let json = JSON(jsonObject)
+//                    if let ocr_results = json["text_block"][0]["text"].string {
+//                        print(ocr_results)
+//                        
+//                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//                            self.textFromOCR.hidden = true
+//                            self.textFromOCR.text = ocr_results
+//                        })
+//                    }
+//                } catch let error as NSError {
+//                    print("json error: \(error.localizedDescription)")
+//                }
+//            }
+//        }
+//        task.resume()
+//    }
     
-    func downloadImage(fromUrl: NSString) {
-        let url:NSURL = NSURL(string: fromUrl as String)!
-        let request:NSURLRequest = NSURLRequest(URL: url)
-        let queue:NSOperationQueue = NSOperationQueue()
-        NSURLConnection.sendAsynchronousRequest(request, queue: queue) { (response, data, error) -> Void in
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                self.textFromOCR.hidden = true
-                self.pictureImageview.image = UIImage(data: data!)
-            })
-        }
-        
-    }
+//    func downloadImage(fromUrl: NSString) {
+//        let url:NSURL = NSURL(string: fromUrl as String)!
+//        let request:NSURLRequest = NSURLRequest(URL: url)
+//        let queue:NSOperationQueue = NSOperationQueue()
+//        NSURLConnection.sendAsynchronousRequest(request, queue: queue) { (response, data, error) -> Void in
+//            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//                self.textFromOCR.hidden = true
+//                self.pictureImageview.image = UIImage(data: data!)
+//            })
+//        }
+//        
+//    }
     
     @IBAction func AnalyzeImageAction(sender: AnyObject) {
-        postAndGetResult()
+//        postAndGetResult()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -119,6 +117,8 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
             return pictureImageview.image! // Change this to an error screen or something
         }
     }
+    
+    
     
 
     /*
