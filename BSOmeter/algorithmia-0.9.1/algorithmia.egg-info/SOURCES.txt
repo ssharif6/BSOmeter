@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+Algorithmia/__init__.py
+Algorithmia/algorithm.py
+Algorithmia/client.py
+Algorithmia/data.py
+algorithmia.egg-info/PKG-INFO
+algorithmia.egg-info/SOURCES.txt
+algorithmia.egg-info/dependency_links.txt
+algorithmia.egg-info/top_level.txt
