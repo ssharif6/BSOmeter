@@ -18,6 +18,8 @@ class TextInputViewController: UIViewController, UITextViewDelegate {
         
 
         // Do any additional setup after loading the view.
+        inputTextView!.layer.borderWidth = 1
+        inputTextView!.layer.borderColor = UIColor.blackColor().CGColor
     }
 
     override func didReceiveMemoryWarning() {
