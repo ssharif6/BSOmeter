@@ -15,8 +15,7 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,17 +23,26 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
         // Dispose of any resources that can be recreated.
     }
     
-    func takePhoto() {
+    @IBAction func takePhoto(sender: AnyObject) {
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .Camera
         
         presentViewController(imagePicker, animated: true, completion: nil)
+
     }
+
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        pictureImageview.contentMode = .ScaleAspectFit
         pictureImageview.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-        
+    }
+    func getImagefile() -> UIImage {
+        if pictureImageview.image != nil {
+            return pictureImageview.image!
+        } else {
+            return pictureImageview.image! // Change this to an error screen or something
+        }
     }
     
 
