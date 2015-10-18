@@ -10,11 +10,28 @@ import UIKit
 
 class PhotoAnalysisViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    var didCameraLoad: Bool = false
+    
     @IBOutlet weak var pictureImageview: UIImageView!
     var imagePicker: UIImagePickerController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.didCameraLoad = true
+    
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if didCameraLoad {
+            imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .Camera
+            self.didCameraLoad = false
+            presentViewController(imagePicker, animated: true, completion: nil)
+
+        } else {
+            // Do nothing
+        }
         
     }
 
@@ -27,9 +44,8 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .Camera
-        
+        self.didCameraLoad = false
         presentViewController(imagePicker, animated: true, completion: nil)
-
     }
 
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
