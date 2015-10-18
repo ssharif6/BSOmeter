@@ -13,33 +13,33 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSOMeter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-z2-eXa">
-                                <rect key="frame" x="7" y="64" width="361" height="97"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSOMeter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="41" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-z2-eXa">
+                                <rect key="frame" x="27" y="64" width="361" height="97"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="81"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
-                                <rect key="frame" x="92" y="273" width="190" height="74"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
+                                <rect key="frame" x="0.0" y="424" width="415" height="88"/>
                                 <animations/>
-                                <state key="normal" title="Check BS"/>
+                                <state key="normal" title="Check BS" image="CheckBSHomePage.png"/>
                                 <connections>
-                                    <segue destination="wzj-yM-a6Q" kind="showDetail" id="4FC-ME-BRN"/>
+                                    <segue destination="naA-N7-E7I" kind="showDetail" id="4FC-ME-BRN"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235.5" y="337.5"/>
+            <point key="canvasLocation" x="235" y="337"/>
         </scene>
         <!--Text Option-->
         <scene sceneID="Vwr-HG-XvS">
@@ -50,34 +50,50 @@
                         <viewControllerLayoutGuide type="bottom" id="q5w-QJ-S0N"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cPN-qa-vfX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAs-iT-HtU">
-                                <rect key="frame" x="253" y="569" width="77" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-jb-4Mg">
+                                <rect key="frame" x="0.0" y="555" width="213" height="70"/>
                                 <animations/>
-                                <state key="normal" title="Take Photo"/>
-                                <connections>
-                                    <segue destination="RYF-Ad-8Q8" kind="show" id="S4g-Yq-sQ2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-jb-4Mg">
-                                <rect key="frame" x="20" y="556" width="119" height="56"/>
-                                <animations/>
-                                <state key="normal" title="Input Text"/>
+                                <state key="normal" title="Input Text" image="InputTextButton.png"/>
                                 <connections>
                                     <segue destination="xMj-Na-oYe" kind="show" id="3eg-PG-zC9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt6-IX-TYu">
+                                <rect key="frame" x="28" y="75" width="359" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAs-iT-HtU">
+                                <rect key="frame" x="204" y="556" width="210" height="69"/>
+                                <animations/>
+                                <state key="normal" title="Take Photo" image="Camera Button.png"/>
+                                <connections>
+                                    <segue destination="RYF-Ad-8Q8" kind="show" id="wfE-QV-qPK"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="BSOMeter.png" translatesAutoresizingMaskIntoConstraints="NO" id="sqI-Zc-JQG">
+                                <rect key="frame" x="56" y="412" width="101" height="101"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Camera Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-MX-J0m">
+                                <rect key="frame" x="242" y="412" width="135" height="101"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationItem key="navigationItem" title="Format" id="ATt-T5-Q8s"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14E-OC-N4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235.5" y="1086.5"/>
+            <point key="canvasLocation" x="861" y="1140"/>
         </scene>
         <!--Analyse Input-->
         <scene sceneID="K81-gS-B4O">
@@ -88,35 +104,35 @@
                         <viewControllerLayoutGuide type="bottom" id="p52-Hn-x5a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="THU-oP-b06">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clg-Kt-Fuh">
-                                <rect key="frame" x="92" y="533" width="191" height="54"/>
-                                <animations/>
-                                <state key="normal" title="Analyse Text"/>
-                                <connections>
-                                    <action selector="analyzeText:" destination="xMj-Na-oYe" eventType="touchUpInside" id="fOo-Bn-KcB"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Placeholder text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-6M-FxL">
-                                <rect key="frame" x="67" y="97" width="240" height="128"/>
+                                <rect key="frame" x="87" y="74" width="241" height="335"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clg-Kt-Fuh">
+                                <rect key="frame" x="84" y="538" width="212" height="69"/>
+                                <animations/>
+                                <state key="normal" title="Analyse Text" image="AnalyzeTextButton.png"/>
+                                <connections>
+                                    <action selector="analyzeText:" destination="xMj-Na-oYe" eventType="touchUpInside" id="fOo-Bn-KcB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="inputTextView" destination="fsq-6M-FxL" id="ikc-SG-ZDB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xN-Q5-fqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648.5" y="1086.5"/>
+            <point key="canvasLocation" x="1386" y="1148"/>
         </scene>
         <!--Results-->
         <scene sceneID="uGw-CB-GqI">
@@ -127,30 +143,30 @@
                         <viewControllerLayoutGuide type="bottom" id="CPt-X4-pWS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zZM-iH-Cbp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is Complete Bullshit!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVw-Z1-uDW">
-                                <rect key="frame" x="44" y="78" width="287" height="104"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is Complete Bullshit!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="OVw-Z1-uDW">
+                                <rect key="frame" x="69" y="97" width="277" height="29"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-hl-tgk">
-                                <rect key="frame" x="111" y="526" width="152" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-hl-tgk">
+                                <rect key="frame" x="0.0" y="581" width="414" height="88"/>
                                 <animations/>
-                                <state key="normal" title="Try another statement"/>
+                                <state key="normal" title="Try another statement" image="TryAnotherStatement.png"/>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpx-yU-feR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054.5" y="1086.5"/>
+            <point key="canvasLocation" x="2418" y="1590"/>
         </scene>
         <!--Analyze Photo-->
         <scene sceneID="ajP-v6-xPu">
@@ -161,33 +177,78 @@
                         <viewControllerLayoutGuide type="bottom" id="G8l-dy-7vR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="N1D-Cx-gre">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBH-hp-eg6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="511"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="483"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mml-lP-gtf">
-                                <rect key="frame" x="158" y="569" width="58" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mml-lP-gtf">
+                                <rect key="frame" x="103" y="624" width="209" height="69"/>
                                 <animations/>
-                                <state key="normal" title="Take Pic"/>
+                                <state key="normal" title="Take Pic" image="Camera Button.png"/>
                                 <connections>
                                     <action selector="takePhoto:" destination="RYF-Ad-8Q8" eventType="touchUpInside" id="380-Tj-Mm2"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vna-KN-6T2">
+                                <rect key="frame" x="66" y="118" width="309" height="183"/>
+                                <animations/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7W-8c-fYT">
+                                <rect key="frame" x="285" y="604" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Analyze"/>
+                                <connections>
+                                    <action selector="AnalyzeImageAction:" destination="RYF-Ad-8Q8" eventType="touchUpInside" id="mdB-Cp-8Kc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationItem key="navigationItem" title="Picture" id="9gI-RF-q3F"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="pictureImageview" destination="EBH-hp-eg6" id="5iV-HT-BCy"/>
+                        <outlet property="textFromOCR" destination="vna-KN-6T2" id="5zL-Ga-7u7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648.5" y="1814.5"/>
+            <point key="canvasLocation" x="1286" y="2024"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iWw-Se-MQk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="naA-N7-E7I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a31-zv-WzO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wzj-yM-a6Q" kind="relationship" relationship="rootViewController" id="JZw-xm-ldi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEa-Xn-nMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="1140"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AnalyzeTextButton.png" width="207" height="69"/>
+        <image name="BSOMeter.png" width="101" height="101"/>
+        <image name="Camera Button.png" width="207" height="69"/>
+        <image name="Camera Icon.png" width="135" height="101"/>
+        <image name="CheckBSHomePage.png" width="414" height="88"/>
+        <image name="InputTextButton.png" width="207" height="69"/>
+        <image name="TryAnotherStatement.png" width="414" height="88"/>
+    </resources>
 </document>
