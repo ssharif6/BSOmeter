@@ -15,6 +15,11 @@
 		855ECAAD1BD36AC300CD9264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855ECAAB1BD36AC300CD9264 /* LaunchScreen.storyboard */; };
 		855ECAB81BD36AC300CD9264 /* BSOmeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAB71BD36AC300CD9264 /* BSOmeterTests.swift */; };
 		855ECAC31BD36AC300CD9264 /* BSOmeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAC21BD36AC300CD9264 /* BSOmeterUITests.swift */; };
+		856495F71BD374AE0066437F /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495F61BD374AE0066437F /* RecordViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		856495FA1BD3750A0066437F /* AudioConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495F91BD3750A0066437F /* AudioConfirmationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		856495FC1BD375670066437F /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FB1BD375670066437F /* TextInputViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FD1BD375A80066437F /* ResultsPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		855ECABE1BD36AC300CD9264 /* BSOmeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSOmeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		855ECAC21BD36AC300CD9264 /* BSOmeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSOmeterUITests.swift; sourceTree = "<group>"; };
 		855ECAC41BD36AC300CD9264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		856495F61BD374AE0066437F /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		856495F91BD3750A0066437F /* AudioConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioConfirmationViewController.swift; sourceTree = "<group>"; };
+		856495FB1BD375670066437F /* TextInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputViewController.swift; sourceTree = "<group>"; };
+		856495FD1BD375A80066437F /* ResultsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsPageViewController.swift; sourceTree = "<group>"; };
+		856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnalysisViewController.swift; sourceTree = "<group>"; };
 		F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,8 +122,8 @@
 		855ECAA11BD36AC300CD9264 /* BSOmeter */ = {
 			isa = PBXGroup;
 			children = (
+				856495F81BD374C10066437F /* ViewControllers */,
 				855ECAA21BD36AC300CD9264 /* AppDelegate.swift */,
-				855ECAA41BD36AC300CD9264 /* ViewController.swift */,
 				855ECAA61BD36AC300CD9264 /* Main.storyboard */,
 				855ECAA91BD36AC300CD9264 /* Assets.xcassets */,
 				855ECAAB1BD36AC300CD9264 /* LaunchScreen.storyboard */,
@@ -138,6 +148,19 @@
 				855ECAC41BD36AC300CD9264 /* Info.plist */,
 			);
 			path = BSOmeterUITests;
+			sourceTree = "<group>";
+		};
+		856495F81BD374C10066437F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				855ECAA41BD36AC300CD9264 /* ViewController.swift */,
+				856495F61BD374AE0066437F /* RecordViewController.swift */,
+				856495F91BD3750A0066437F /* AudioConfirmationViewController.swift */,
+				856495FB1BD375670066437F /* TextInputViewController.swift */,
+				856495FD1BD375A80066437F /* ResultsPageViewController.swift */,
+				856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D62E5889D8A71E186AAC6C35 /* Pods */ = {
@@ -330,8 +353,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				856495F71BD374AE0066437F /* RecordViewController.swift in Sources */,
+				856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */,
 				855ECAA51BD36AC300CD9264 /* ViewController.swift in Sources */,
+				856495FA1BD3750A0066437F /* AudioConfirmationViewController.swift in Sources */,
 				855ECAA31BD36AC300CD9264 /* AppDelegate.swift in Sources */,
+				856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */,
+				856495FC1BD375670066437F /* TextInputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
