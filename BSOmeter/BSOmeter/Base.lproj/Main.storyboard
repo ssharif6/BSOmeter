@@ -113,6 +113,7 @@
                                 <state key="normal" title="Analyse Text" image="AnalyzeTextButton.png"/>
                                 <connections>
                                     <action selector="analyzeText:" destination="xMj-Na-oYe" eventType="touchUpInside" id="fOo-Bn-KcB"/>
+                                    <segue destination="x3d-M8-Sjt" kind="show" identifier="toResultsSegue" id="DkS-l2-uNQ"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Placeholder text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-6M-FxL">
@@ -137,7 +138,7 @@
         <!--Results-->
         <scene sceneID="uGw-CB-GqI">
             <objects>
-                <viewController title="Results" id="x3d-M8-Sjt" sceneMemberID="viewController">
+                <viewController title="Results" id="x3d-M8-Sjt" customClass="ResultsPageViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sou-Ax-R9z"/>
                         <viewControllerLayoutGuide type="bottom" id="CPt-X4-pWS"/>
@@ -150,26 +151,29 @@
                                 <rect key="frame" x="0.0" y="581" width="414" height="88"/>
                                 <animations/>
                                 <state key="normal" title="Try another statement" image="TryAnotherStatement.png"/>
+                                <connections>
+                                    <segue destination="wzj-yM-a6Q" kind="show" id="5ZS-FU-ts4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAr-LO-c4Y">
-                                <rect key="frame" x="30" y="66" width="169" height="58"/>
+                                <rect key="frame" x="110" y="64" width="169" height="58"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5q-lB-OhX" customClass="KDCircularProgress" customModule="BSOmeter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="169" width="414" height="397"/>
+                                <rect key="frame" x="30" y="216" width="329" height="320"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0K-rI-IUE">
-                                        <rect key="frame" x="146" y="111" width="121" height="53"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0K-rI-IUE">
+                                        <rect key="frame" x="116" y="87" width="96" height="53"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Truth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWL-4d-ijY">
-                                        <rect key="frame" x="150" y="190" width="114" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="True" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWL-4d-ijY">
+                                        <rect key="frame" x="116" y="162" width="97" height="60"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,24 +184,45 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
-                                        <color key="value" red="0.11734386726667489" green="1" blue="0.21479407930092287" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progressThickness">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="0.20000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="trackThickness">
                                         <real key="value" value="0.20000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="progressInsideFillColor">
-                                        <color key="value" red="0.3538275611522963" green="0.6625547874493386" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.12116904772852632" blue="0.0030707753273852001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                        <integer key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <integer key="value" value="-90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="IBColor1">
+                                        <color key="value" red="0.15207305916957681" green="1" blue="0.010178174202981616" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BULLSH*T" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzH-Aj-tXf">
+                                <rect key="frame" x="0.0" y="130" width="414" height="86"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="47"/>
+                                <color key="textColor" red="0.8713699494949495" green="0.11519115094156829" blue="0.00096604236961600346" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="LevelOfTruthLabel" destination="EzH-Aj-tXf" id="AHY-4N-5jL"/>
+                        <outlet property="percentageLabel" destination="C0K-rI-IUE" id="VWy-CL-Xgu"/>
+                        <outlet property="percentageWheel" destination="x5q-lB-OhX" id="aAD-Lr-ebI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpx-yU-feR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,6 +258,7 @@
                                 <state key="normal" title="Analyze" image="next copy 4"/>
                                 <connections>
                                     <action selector="AnalyzeImageAction:" destination="RYF-Ad-8Q8" eventType="touchUpInside" id="mdB-Cp-8Kc"/>
+                                    <segue destination="x3d-M8-Sjt" kind="show" id="b8X-4z-dYW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -247,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1240" y="2026"/>
+            <point key="canvasLocation" x="1325" y="1907"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iWw-Se-MQk">
@@ -279,4 +305,8 @@
         <image name="TryAnotherStatement.png" width="414" height="88"/>
         <image name="next copy 4" width="207" height="69"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="b8X-4z-dYW"/>
+        <segue reference="5ZS-FU-ts4"/>
+    </inferredMetricsTieBreakers>
 </document>
