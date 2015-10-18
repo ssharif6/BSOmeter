@@ -15,7 +15,7 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
     var didCameraLoad: Bool = false
     // OCR Settings
     let apikey = "4e21e91d-5107-43ed-8744-1797b084b002"
-    var ocrImageUrl = ""
+    var ocrImageUrl = "http://i.imgur.com/iG4ZCw7.jpg"
     let endpoint: NSURL = NSURL(string: "https://api.idolondemand.com/1/api/sync/ocrdocument/v1")!
     //Reading modes
     let mode1 = "&mode=document_photo"   //This is best for photos
@@ -31,7 +31,6 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
         super.viewDidLoad()
         self.didCameraLoad = true
         textFromOCR.hidden = true
-        downloadImage(ocrImageUrl)
     
     }
     
@@ -82,7 +81,7 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
         let url:NSURL = NSURL(string: fromUrl as String)!
         let request:NSURLRequest = NSURLRequest(URL: url)
         let queue:NSOperationQueue = NSOperationQueue()
-        NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
+        NSURLConnection.sendAsynchronousRequest(request, queue: queue) { (response, data, error) -> Void in
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.textFromOCR.hidden = true
                 self.pictureImageview.image = UIImage(data: data!)

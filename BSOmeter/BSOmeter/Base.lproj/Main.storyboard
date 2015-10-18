@@ -78,9 +78,11 @@
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="BSOMeter.png" translatesAutoresizingMaskIntoConstraints="NO" id="sqI-Zc-JQG">
                                 <rect key="frame" x="56" y="412" width="101" height="101"/>
+                                <animations/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Camera Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-MX-J0m">
                                 <rect key="frame" x="242" y="412" width="135" height="101"/>
+                                <animations/>
                             </imageView>
                         </subviews>
                         <animations/>
