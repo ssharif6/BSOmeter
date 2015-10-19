@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Start Up-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Start Up" id="BYZ-38-t0r" customClass="ViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
+                                <rect key="frame" x="0.0" y="544" width="415" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Check BS" image="CheckBSHomePage.png"/>
+                                <connections>
+                                    <segue destination="naA-N7-E7I" kind="showDetail" id="4FC-ME-BRN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSO'Meter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="41" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-z2-eXa">
+                                <rect key="frame" x="19" y="62" width="377" height="97"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="81"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="337"/>
+        </scene>
+        <!--Text Option-->
+        <scene sceneID="Vwr-HG-XvS">
+            <objects>
+                <viewController title="Text Option" id="wzj-yM-a6Q" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fek-Ya-VhR"/>
+                        <viewControllerLayoutGuide type="bottom" id="q5w-QJ-S0N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cPN-qa-vfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-jb-4Mg">
+                                <rect key="frame" x="0.0" y="555" width="213" height="70"/>
+                                <animations/>
+                                <state key="normal" title="Input Text" image="InputTextButton.png"/>
+                                <connections>
+                                    <segue destination="xMj-Na-oYe" kind="show" id="3eg-PG-zC9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt6-IX-TYu">
+                                <rect key="frame" x="28" y="75" width="359" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="BSOMeter.png" translatesAutoresizingMaskIntoConstraints="NO" id="sqI-Zc-JQG">
+                                <rect key="frame" x="56" y="412" width="101" height="101"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Camera Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-MX-J0m">
+                                <rect key="frame" x="242" y="412" width="135" height="101"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAs-iT-HtU">
+                                <rect key="frame" x="207" y="556" width="210" height="69"/>
+                                <animations/>
+                                <state key="normal" title="Take Photo" image="Camera Button.png"/>
+                                <connections>
+                                    <segue destination="RYF-Ad-8Q8" kind="show" id="wfE-QV-qPK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Format" id="ATt-T5-Q8s"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14E-OC-N4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="1140"/>
+        </scene>
+        <!--Analyse Input-->
+        <scene sceneID="K81-gS-B4O">
+            <objects>
+                <viewController title="Analyse Input" id="xMj-Na-oYe" customClass="TextInputViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kuz-X3-qFL"/>
+                        <viewControllerLayoutGuide type="bottom" id="p52-Hn-x5a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="THU-oP-b06">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clg-Kt-Fuh">
+                                <rect key="frame" x="101" y="573" width="212" height="69"/>
+                                <animations/>
+                                <state key="normal" title="Analyse Text" image="AnalyzeTextButton.png"/>
+                                <connections>
+                                    <action selector="analyzeText:" destination="xMj-Na-oYe" eventType="touchUpInside" id="fOo-Bn-KcB"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Placeholder text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-6M-FxL">
+                                <rect key="frame" x="0.0" y="64" width="414" height="466"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="inputTextView" destination="fsq-6M-FxL" id="ikc-SG-ZDB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xN-Q5-fqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="1158"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="uGw-CB-GqI">
+            <objects>
+                <viewController title="Results" id="x3d-M8-Sjt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sou-Ax-R9z"/>
+                        <viewControllerLayoutGuide type="bottom" id="CPt-X4-pWS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zZM-iH-Cbp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-hl-tgk">
+                                <rect key="frame" x="0.0" y="581" width="414" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Try another statement" image="TryAnotherStatement.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAr-LO-c4Y">
+                                <rect key="frame" x="30" y="66" width="169" height="58"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5q-lB-OhX" customClass="KDCircularProgress" customModule="BSOmeter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="169" width="414" height="397"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0K-rI-IUE">
+                                        <rect key="frame" x="146" y="111" width="121" height="53"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Truth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWL-4d-ijY">
+                                        <rect key="frame" x="150" y="190" width="114" height="60"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" red="0.11734386726667489" green="1" blue="0.21479407930092287" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressThickness">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trackThickness">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressInsideFillColor">
+                                        <color key="value" red="0.3538275611522963" green="0.6625547874493386" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tpx-yU-feR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976" y="1428"/>
+        </scene>
+        <!--Analyze Photo-->
+        <scene sceneID="ajP-v6-xPu">
+            <objects>
+                <viewController title="Analyze Photo" id="RYF-Ad-8Q8" customClass="PhotoAnalysisViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gbj-uv-uCt"/>
+                        <viewControllerLayoutGuide type="bottom" id="G8l-dy-7vR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N1D-Cx-gre">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBH-hp-eg6">
+                                <rect key="frame" x="0.0" y="64" width="414" height="483"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mml-lP-gtf">
+                                <rect key="frame" x="12" y="619" width="175" height="69"/>
+                                <animations/>
+                                <state key="normal" title="Take Pic" image="Camera Button.png"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="RYF-Ad-8Q8" eventType="touchUpInside" id="380-Tj-Mm2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7W-8c-fYT">
+                                <rect key="frame" x="225" y="619" width="179" height="69"/>
+                                <animations/>
+                                <state key="normal" title="Analyze" image="next copy 4"/>
+                                <connections>
+                                    <action selector="AnalyzeImageAction:" destination="RYF-Ad-8Q8" eventType="touchUpInside" id="mdB-Cp-8Kc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Picture" id="9gI-RF-q3F"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="pictureImageview" destination="EBH-hp-eg6" id="5iV-HT-BCy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240" y="2026"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iWw-Se-MQk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="naA-N7-E7I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a31-zv-WzO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wzj-yM-a6Q" kind="relationship" relationship="rootViewController" id="JZw-xm-ldi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEa-Xn-nMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="1140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AnalyzeTextButton.png" width="207" height="69"/>
+        <image name="BSOMeter.png" width="101" height="101"/>
+        <image name="Camera Button.png" width="207" height="69"/>
+        <image name="Camera Icon.png" width="135" height="101"/>
+        <image name="CheckBSHomePage.png" width="414" height="88"/>
+        <image name="InputTextButton.png" width="207" height="69"/>
+        <image name="TryAnotherStatement.png" width="414" height="88"/>
+        <image name="next copy 4" width="207" height="69"/>
+    </resources>
+</document>
