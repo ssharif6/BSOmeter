@@ -14,6 +14,16 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Parse.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -32,6 +42,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>0273D203BC8AB3CB9071AB0F6427AC73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2B52E35A232F8C7BC3A74B3DC9666BB0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
@@ -42,7 +62,47 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>57ADC05E440A960212657DE6DA1FEDD5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5D982E3A47CA121980CD89E12733AA10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>89DF5276CC26B065E61EC5D995A2A314</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC0B4854BD2CEE1EA210B1E32979BD9B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B2EC8E5366B5C8D3387C76E271129897</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8A759F57254B6094CF99273E5ECEE8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9A04D3C9B208813656510FDA8ADAE02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C2B9E98228E08E96A1459F60CBA11698</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E030C375DDEF4CC56A705A921465FC5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
