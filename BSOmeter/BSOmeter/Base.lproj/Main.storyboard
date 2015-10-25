@@ -21,7 +21,7 @@
                                 <animations/>
                                 <state key="normal" title="Check BS" image="CheckBSHomePage.png"/>
                                 <connections>
-                                    <segue destination="naA-N7-E7I" kind="showDetail" id="4FC-ME-BRN"/>
+                                    <action selector="switchToInputSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHf-lc-Owa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSO'Meter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="41" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-z2-eXa">
@@ -36,10 +36,61 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="BSOMeterLabel" destination="tLq-z2-eXa" id="yT6-Zb-TCM"/>
+                        <outlet property="checkBSButton" destination="lwK-8T-M9F" id="zDf-Dh-8Z8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235" y="337"/>
+            <point key="canvasLocation" x="-1453" y="729"/>
+        </scene>
+        <!--Format Select View Controller-->
+        <scene sceneID="ATJ-8K-zPS">
+            <objects>
+                <viewController id="4wJ-KP-YaK" customClass="FormatSelectViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bsZ-oH-3j0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ugR-31-BeE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pnD-pN-Q5s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irz-aj-p4A">
+                                <rect key="frame" x="28" y="28" width="359" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="BSOMeter.png" translatesAutoresizingMaskIntoConstraints="NO" id="ReF-EQ-q4p">
+                                <rect key="frame" x="56" y="278" width="101" height="101"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Camera Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="wbC-xU-zTI">
+                                <rect key="frame" x="242" y="278" width="135" height="101"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ger-hC-1fp">
+                                <rect key="frame" x="208" y="387" width="202" height="69"/>
+                                <animations/>
+                                <state key="normal" title="Take Photo" image="Camera Button.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPx-R6-Qtc">
+                                <rect key="frame" x="6" y="387" width="200" height="70"/>
+                                <animations/>
+                                <state key="normal" title="Input Text" image="InputTextButton.png"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B64-bR-z9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-829" y="614"/>
         </scene>
         <!--Text Option-->
         <scene sceneID="Vwr-HG-XvS">
@@ -93,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14E-OC-N4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="861" y="1140"/>
+            <point key="canvasLocation" x="513" y="2164"/>
         </scene>
         <!--Analyse Input-->
         <scene sceneID="K81-gS-B4O">
@@ -133,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xN-Q5-fqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1386" y="1158"/>
+            <point key="canvasLocation" x="1093" y="2164"/>
         </scene>
         <!--Results-->
         <scene sceneID="uGw-CB-GqI">
@@ -226,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpx-yU-feR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976" y="1428"/>
+            <point key="canvasLocation" x="1590" y="2164"/>
         </scene>
         <!--Analyze Photo-->
         <scene sceneID="ajP-v6-xPu">
@@ -273,7 +324,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1325" y="1907"/>
+            <point key="canvasLocation" x="501" y="3093"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iWw-Se-MQk">
@@ -292,7 +343,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEa-Xn-nMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235" y="1140"/>
+            <point key="canvasLocation" x="-117" y="2102"/>
         </scene>
     </scenes>
     <resources>
@@ -306,7 +357,7 @@
         <image name="next copy 4" width="207" height="69"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="b8X-4z-dYW"/>
         <segue reference="5ZS-FU-ts4"/>
+        <segue reference="DkS-l2-uNQ"/>
     </inferredMetricsTieBreakers>
 </document>

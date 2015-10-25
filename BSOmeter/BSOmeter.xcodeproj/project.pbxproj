@@ -23,6 +23,7 @@
 		856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */; };
 		8564960C1BD4469E0066437F /* libCloudinary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8564960B1BD4469E0066437F /* libCloudinary.a */; settings = {ASSET_TAGS = (); }; };
 		8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564960D1BD4482B0066437F /* PhotoPoster.swift */; settings = {ASSET_TAGS = (); }; };
+		B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnalysisViewController.swift; sourceTree = "<group>"; };
 		8564960B1BD4469E0066437F /* libCloudinary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCloudinary.a; sourceTree = "<group>"; };
 		8564960D1BD4482B0066437F /* PhotoPoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPoster.swift; sourceTree = "<group>"; };
+		B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormatSelectViewController.swift; path = ../FormatSelectViewController.swift; sourceTree = "<group>"; };
 		F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 		856495F81BD374C10066437F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */,
 				371C8F841BD443D800C84FDE /* KDCircularProgress.swift */,
 				855ECAA41BD36AC300CD9264 /* ViewController.swift */,
 				856495F61BD374AE0066437F /* RecordViewController.swift */,
@@ -374,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */,
 				856495F71BD374AE0066437F /* RecordViewController.swift in Sources */,
 				8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */,
 				856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */,
