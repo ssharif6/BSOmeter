@@ -3,7 +3,7 @@ import Algorithmia
 # 1.1 URL to text
 # retrieves text file from URL
 # Str -> Str
-input = "http://www.cnn.com/2015/10/18/politics/donald-trump-jeb-bush-foreign-policy/index.html"
+input = "your URL here"
 client = Algorithmia.client('simfMcTKIsg3/P+fl/1ENYWrnQd1')
 algo = client.algo('util/ExtractText/0.1.0')
 doc = algo.pipe(input)
