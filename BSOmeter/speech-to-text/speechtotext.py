@@ -19,7 +19,7 @@ except sr.RequestError as e:
     print("Could not request results from Google Speech Recognition service; {0}".format(e))
 
 # recognize speech using Wit.ai
-WIT_AI_KEY = "***REMOVED***" # Wit.ai keys are 32-character uppercase alphanumeric strings
+WIT_AI_KEY = "EEK5357AA63JBFVUZOISXFKA2UEYJKXY" # Wit.ai keys are 32-character uppercase alphanumeric strings
 try:
     print("Wit.ai thinks you said " + r.recognize_wit(audio, key=WIT_AI_KEY))
 except sr.UnknownValueError:
@@ -36,14 +36,14 @@ except sr.RequestError as e:
             #"plan": "standard",
             #"credentials": {
                 #"url": "https://stream.watsonplatform.net/speech-to-text/api",
-                #"username": "***REMOVED***",
-                #"password": "***REMOVED***"
+                #"username": "2350af39-12f7-4223-b3d1-54e2ed14fa50",
+                #"password": "Kii2IiNEBcx6"
             #}
         #}
     #]
 #}
-IBM_USERNAME = "***REMOVED***" # IBM Speech to Text usernames are strings of the form XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-IBM_PASSWORD = "***REMOVED***" # IBM Speech to Text passwords are mixed-case alphanumeric strings
+IBM_USERNAME = "2350af39-12f7-4223-b3d1-54e2ed14fa50" # IBM Speech to Text usernames are strings of the form XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+IBM_PASSWORD = "Kii2IiNEBcx6" # IBM Speech to Text passwords are mixed-case alphanumeric strings
 try:
     print("IBM Speech to Text thinks you said " + r.recognize_ibm(audio, username=IBM_USERNAME, password=IBM_PASSWORD))
 except sr.UnknownValueError:
