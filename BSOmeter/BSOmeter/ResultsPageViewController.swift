@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import Darwin
 
 class ResultsPageViewController: UIViewController {
     @IBOutlet weak var percentageLabel: UILabel!
@@ -17,7 +18,9 @@ class ResultsPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setWheelProperties(0.04)
+        let xNumber = arc4random_uniform(23)
+        var randomNum:Int = Int(xNumber)
+        setWheelProperties(randomNum)
         // Do any additional setup after loading the view.
     }
 
@@ -40,7 +43,7 @@ class ResultsPageViewController: UIViewController {
         }
     }
     
-    func setWheelProperties(numFromParse: Double) {
+    func setWheelProperties(numFromParse: Int) {
         
         percentageWheel.startAngle = -90
         percentageWheel.clockwise = true
@@ -50,9 +53,8 @@ class ResultsPageViewController: UIViewController {
 
         percentageWheel.angle = Int((360) * numFromParse)
         
-        var percentage: Double = numFromParse * 100
-        var fakePercentage = (arc4random_uniform(6))
-        print(fakePercentage)
+        let percentage: Int = numFromParse * 100
+
         if percentage < 50 {
             percentageWheel.progressInsideFillColor = UIColor.redColor()
         } else {
