@@ -4,7 +4,7 @@ import Algorithmia
 # retrieves text file from URL
 # Str -> Str
 input = "your URL here"
-client = Algorithmia.client('***REMOVED***')
+client = Algorithmia.client('simfMcTKIsg3/P+fl/1ENYWrnQd1')
 algo = client.algo('util/ExtractText/0.1.0')
 doc = algo.pipe(input)
 
@@ -13,7 +13,7 @@ doc = algo.pipe(input)
 # summarizes info from 1.1
 # Str -> Str
 input = doc
-client = Algorithmia.client('***REMOVED***')
+client = Algorithmia.client('simfMcTKIsg3/P+fl/1ENYWrnQd1')
 algo = client.algo('nlp/Summarizer/0.1.2')
 summarized = algo.pipe(input)
 
@@ -22,7 +22,7 @@ summarized = algo.pipe(input)
 # breaks down contents from 1.2
 # Str -> listof Str
 input = summarized
-client = Algorithmia.client('***REMOVED***')
+client = Algorithmia.client('simfMcTKIsg3/P+fl/1ENYWrnQd1')
 algo = client.algo('ApacheOpenNLP/SentenceDetection/0.1.0')
 sentences = algo.pipe(input)
 
@@ -33,7 +33,7 @@ sentences = algo.pipe(input)
 wholething = []
 for phrase in sentences:
     input = phrase
-    client = Algorithmia.client('***REMOVED***')
+    client = Algorithmia.client('simfMcTKIsg3/P+fl/1ENYWrnQd1')
     algo = client.algo('nlp/SentimentAnalysis/0.1.1')
     sentiment = algo.pipe(input)
     wholething = wholething + [sentiment]

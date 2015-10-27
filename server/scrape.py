@@ -9,8 +9,8 @@ from bs4 import BeautifulSoup
 conn = pg8k.connect(
             host="politidb.cm8mhypepst9.us-west-2.rds.amazonaws.com",
             port=5432,
-            user="***REMOVED***",
-            password="***REMOVED***",
+            user="trumpster",
+            password="bushdidnothingwrong",
             database="postgres"
         )
 
@@ -29,6 +29,4 @@ for doc in docs:
     else:
         c.execute("INSERT INTO Lies (statement, politician, topic) VALUES (%s, %s, %s)", (re.sub(r'&nbsp;', '\\n', re.sub(r'(\<p\>)?&quot;(\</p\>)?', '', doc['statement'])),doc['speaker']['last_name'], doc['subject'][0]['subject_slug']))
         conn.commit()
-
-
 
