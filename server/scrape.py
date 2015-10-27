@@ -30,5 +30,3 @@ for doc in docs:
         c.execute("INSERT INTO Lies (statement, politician, topic) VALUES (%s, %s, %s)", (re.sub(r'&nbsp;', '\\n', re.sub(r'(\<p\>)?&quot;(\</p\>)?', '', doc['statement'])),doc['speaker']['last_name'], doc['subject'][0]['subject_slug']))
         conn.commit()
 
-
-
