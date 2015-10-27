@@ -21,7 +21,7 @@ def calculateP_NF_T(name, topic):
     t = d.getAverageNewsSourceRepByTopic(name, topic)
 
 def calculateP_BS_W(pname, topic, keyword):
-    r = getBayesianData(pname, topic, keyword)
+    r = d.getBayesianData(pname, topic, keyword)
     p_w_bs = r['kw']['bs'] / r['kw']['total']
     p_bs = r['no-kw']['bs'] / r['no-kw']['total']
     p_w_t = (r['kw']['total'] - r['kw']['bs']) / r['kw']['total']

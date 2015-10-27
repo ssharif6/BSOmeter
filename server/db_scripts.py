@@ -38,10 +38,10 @@ class Db():
 
     def getBayesianData(self, pname, dtopic, keyword):
         res = {'kw':{}, 'no-kw':{}}
-        self.c.execute("SELECT COUNT(*) FROM Speeches S WHERE S.pname = %s AND S.dtopic = %s AND S.transcript LIKE '%' || %s '%'", (pname, dtopic, keyword))
+        self.c.execute("SELECT COUNT(*) FROM Speeches S WHERE S.pname = %s AND S.dtopic = %s AND S.transcript LIKE '%' || %s || '%'", (pname, dtopic, keyword))
         res['kw']['total'] = self.conn.fetchall()
         conn.commit()
-        self.c.execute("SELECT COUNT(*) FROM Speeches S WHERE S.pname = %s AND S.dtopic = %s AND S.transcript LIKE '%' || %s '%' AND S.bullshit = TRUE", (pname, dtopic, keyword))
+        self.c.execute("SELECT COUNT(*) FROM Speeches S WHERE S.pname = %s AND S.dtopic = %s AND S.transcript LIKE '%%' || %s || '%%' AND S.bullshit = TRUE", (pname, dtopic, keyword))
         res['kw']['bs'] = self.conn.fetchall()
         conn.commit()
         self.c.execute("SELECT COUNT(*) FROM Speeches S WHERE S.pname = %s AND S.dtopic = %s", (pname, dtopic, keyword))
