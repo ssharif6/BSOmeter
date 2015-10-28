@@ -1,4 +1,11 @@
 platform :ios, ‘9.0’
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['ENABLE_BITCODE'] = 'NO'
+        end
+    end
+end
 use_frameworks!
 
 pod 'Alamofire', '~> 3.0'
@@ -6,3 +13,4 @@ pod 'AFNetworking', '~> 2.0'
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 pod ‘Parse’
 pod 'Bolts'
+pod 'TesseractOCRiOS', '4.0.0'
