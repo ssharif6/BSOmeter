@@ -7,10 +7,10 @@ import pg8000 as pg8k
 from bs4 import BeautifulSoup
 
 conn = pg8k.connect(
-            host="politidb.cm8mhypepst9.us-west-2.rds.amazonaws.com",
+            host="",
             port=5432,
-            user="trumpster",
-            password="bushdidnothingwrong",
+            user="",
+            password="",
             database="postgres"
         )
 
