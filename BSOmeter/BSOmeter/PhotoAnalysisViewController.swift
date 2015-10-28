@@ -20,21 +20,22 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
         super.viewDidLoad()
         self.didCameraLoad = true
     }
-    
-    
-    
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
     override func viewDidAppear(animated: Bool) {
         if didCameraLoad {
             imagePicker = UIImagePickerController()
             imagePicker.delegate = self
-            imagePicker.sourceType = .Camera
+            imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+            imagePicker.cameraCaptureMode = .Photo
+            imagePicker.modalPresentationStyle = .FullScreen
             self.didCameraLoad = false
-            presentViewController(imagePicker, animated: true, completion: nil)
+            presentViewController(imagePicker, animated: false, completion: nil)
 
         } else {
             // Do nothing
         }
-        
     }
     
     
