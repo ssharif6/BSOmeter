@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F4F0A8549E7552478DF13C0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */; };
-		371C8F851BD443D800C84FDE /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C8F841BD443D800C84FDE /* KDCircularProgress.swift */; settings = {ASSET_TAGS = (); }; };
+		371C8F851BD443D800C84FDE /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C8F841BD443D800C84FDE /* KDCircularProgress.swift */; };
 		855ECAA31BD36AC300CD9264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855ECAA21BD36AC300CD9264 /* AppDelegate.swift */; };
 		855ECAA81BD36AC300CD9264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855ECAA61BD36AC300CD9264 /* Main.storyboard */; };
 		855ECAAA1BD36AC300CD9264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855ECAA91BD36AC300CD9264 /* Assets.xcassets */; };
@@ -19,23 +19,25 @@
 		856495FC1BD375670066437F /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FB1BD375670066437F /* TextInputViewController.swift */; };
 		856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FD1BD375A80066437F /* ResultsPageViewController.swift */; };
 		856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */; };
-		8564960C1BD4469E0066437F /* libCloudinary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8564960B1BD4469E0066437F /* libCloudinary.a */; settings = {ASSET_TAGS = (); }; };
-		8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564960D1BD4482B0066437F /* PhotoPoster.swift */; settings = {ASSET_TAGS = (); }; };
-		B244BF471BE03BA6007DDD78 /* AnalyzeTextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF481BE03BA6007DDD78 /* BSOMeter.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3C1BE03BA6007DDD78 /* BSOMeter.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF491BE03BA6007DDD78 /* Camera Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3D1BE03BA6007DDD78 /* Camera Button.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF4A1BE03BA6007DDD78 /* Camera Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3E1BE03BA6007DDD78 /* Camera Icon.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF4B1BE03BA6007DDD78 /* CameraOption.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3F1BE03BA6007DDD78 /* CameraOption.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF4C1BE03BA6007DDD78 /* CheckBSHomePage.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF401BE03BA6007DDD78 /* CheckBSHomePage.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF4D1BE03BA6007DDD78 /* Green Thumbs Up True.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF411BE03BA6007DDD78 /* Green Thumbs Up True.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF4E1BE03BA6007DDD78 /* InputTextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF421BE03BA6007DDD78 /* InputTextButton.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF4F1BE03BA6007DDD78 /* next copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF431BE03BA6007DDD78 /* next copy 4.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF501BE03BA6007DDD78 /* No Thumbs Down Bullshit.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF441BE03BA6007DDD78 /* No Thumbs Down Bullshit.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF511BE03BA6007DDD78 /* TextOption.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF451BE03BA6007DDD78 /* TextOption.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF521BE03BA6007DDD78 /* TryAnotherStatement.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF461BE03BA6007DDD78 /* TryAnotherStatement.png */; settings = {ASSET_TAGS = (); }; };
-		B244BF541BE041E6007DDD78 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244BF531BE041E6007DDD78 /* TransitionManager.swift */; settings = {ASSET_TAGS = (); }; };
-		B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D991B1BDD7480003CAC12 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8564960C1BD4469E0066437F /* libCloudinary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8564960B1BD4469E0066437F /* libCloudinary.a */; };
+		8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564960D1BD4482B0066437F /* PhotoPoster.swift */; };
+		857CEFB41BE0952D00D4811E /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857CEFB31BE0952D00D4811E /* TesseractOCR.framework */; };
+		857CEFB61BE0955000D4811E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 857CEFB51BE0955000D4811E /* tessdata */; };
+		B244BF471BE03BA6007DDD78 /* AnalyzeTextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */; };
+		B244BF481BE03BA6007DDD78 /* BSOMeter.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3C1BE03BA6007DDD78 /* BSOMeter.png */; };
+		B244BF491BE03BA6007DDD78 /* Camera Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3D1BE03BA6007DDD78 /* Camera Button.png */; };
+		B244BF4A1BE03BA6007DDD78 /* Camera Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3E1BE03BA6007DDD78 /* Camera Icon.png */; };
+		B244BF4B1BE03BA6007DDD78 /* CameraOption.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3F1BE03BA6007DDD78 /* CameraOption.png */; };
+		B244BF4C1BE03BA6007DDD78 /* CheckBSHomePage.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF401BE03BA6007DDD78 /* CheckBSHomePage.png */; };
+		B244BF4D1BE03BA6007DDD78 /* Green Thumbs Up True.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF411BE03BA6007DDD78 /* Green Thumbs Up True.png */; };
+		B244BF4E1BE03BA6007DDD78 /* InputTextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF421BE03BA6007DDD78 /* InputTextButton.png */; };
+		B244BF4F1BE03BA6007DDD78 /* next copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF431BE03BA6007DDD78 /* next copy 4.png */; };
+		B244BF501BE03BA6007DDD78 /* No Thumbs Down Bullshit.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF441BE03BA6007DDD78 /* No Thumbs Down Bullshit.png */; };
+		B244BF511BE03BA6007DDD78 /* TextOption.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF451BE03BA6007DDD78 /* TextOption.png */; };
+		B244BF521BE03BA6007DDD78 /* TryAnotherStatement.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF461BE03BA6007DDD78 /* TryAnotherStatement.png */; };
+		B244BF541BE041E6007DDD78 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244BF531BE041E6007DDD78 /* TransitionManager.swift */; };
+		B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */; };
+		B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D991B1BDD7480003CAC12 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnalysisViewController.swift; sourceTree = "<group>"; };
 		8564960B1BD4469E0066437F /* libCloudinary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCloudinary.a; sourceTree = "<group>"; };
 		8564960D1BD4482B0066437F /* PhotoPoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPoster.swift; sourceTree = "<group>"; };
+		857CEFB31BE0952D00D4811E /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		857CEFB51BE0955000D4811E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AnalyzeTextButton.png; sourceTree = "<group>"; };
 		B244BF3C1BE03BA6007DDD78 /* BSOMeter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BSOMeter.png; sourceTree = "<group>"; };
 		B244BF3D1BE03BA6007DDD78 /* Camera Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Camera Button.png"; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F4F0A8549E7552478DF13C0 /* Pods.framework in Frameworks */,
+				857CEFB41BE0952D00D4811E /* TesseractOCR.framework in Frameworks */,
 				8564960C1BD4469E0066437F /* libCloudinary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +130,7 @@
 		67617A7A7BB0EF59455C9680 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				857CEFB31BE0952D00D4811E /* TesseractOCR.framework */,
 				8564960B1BD4469E0066437F /* libCloudinary.a */,
 				F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */,
 			);
@@ -204,6 +210,7 @@
 		B244BF3A1BE03B87007DDD78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				857CEFB51BE0955000D4811E /* tessdata */,
 				B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */,
 				B244BF3C1BE03BA6007DDD78 /* BSOMeter.png */,
 				B244BF3D1BE03BA6007DDD78 /* Camera Button.png */,
@@ -338,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B244BF4F1BE03BA6007DDD78 /* next copy 4.png in Resources */,
+				857CEFB61BE0955000D4811E /* tessdata in Resources */,
 				B244BF4D1BE03BA6007DDD78 /* Green Thumbs Up True.png in Resources */,
 				855ECAAD1BD36AC300CD9264 /* LaunchScreen.storyboard in Resources */,
 				B244BF511BE03BA6007DDD78 /* TextOption.png in Resources */,
@@ -576,7 +584,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BSOmeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -596,7 +608,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BSOmeter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
