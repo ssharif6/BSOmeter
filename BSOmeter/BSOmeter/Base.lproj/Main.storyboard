@@ -16,14 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
-                                <rect key="frame" x="0.0" y="544" width="415" height="88"/>
-                                <animations/>
-                                <state key="normal" title="Check BS" image="CheckBSHomePage.png"/>
-                                <connections>
-                                    <segue destination="naA-N7-E7I" kind="showDetail" id="4FC-ME-BRN"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSO'Meter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="41" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-z2-eXa">
                                 <rect key="frame" x="19" y="62" width="377" height="97"/>
                                 <animations/>
@@ -31,20 +23,33 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
+                                <rect key="frame" x="-1" y="324" width="415" height="88"/>
+                                <animations/>
+                                <state key="normal" title="Check BS" image="CheckBSHomePage.png"/>
+                                <connections>
+                                    <action selector="getRidOfElements" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaT-Ad-1DR"/>
+                                    <segue destination="naA-N7-E7I" kind="presentation" modalPresentationStyle="overFullScreen" id="n8c-LF-blb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="bsButton" destination="lwK-8T-M9F" id="h9O-bF-1Ji"/>
+                        <outlet property="bsLabel" destination="tLq-z2-eXa" id="v53-AA-buD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235" y="337"/>
+            <point key="canvasLocation" x="-117" y="1067"/>
         </scene>
         <!--Text Option-->
         <scene sceneID="Vwr-HG-XvS">
             <objects>
-                <viewController title="Text Option" id="wzj-yM-a6Q" sceneMemberID="viewController">
+                <viewController title="Text Option" id="wzj-yM-a6Q" customClass="FormatSelectViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fek-Ya-VhR"/>
                         <viewControllerLayoutGuide type="bottom" id="q5w-QJ-S0N"/>
@@ -54,46 +59,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-jb-4Mg">
-                                <rect key="frame" x="0.0" y="555" width="213" height="70"/>
+                                <rect key="frame" x="132" y="191" width="150" height="150"/>
                                 <animations/>
-                                <state key="normal" title="Input Text" image="InputTextButton.png"/>
+                                <state key="normal" image="TextOption.png"/>
                                 <connections>
                                     <segue destination="xMj-Na-oYe" kind="show" id="3eg-PG-zC9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt6-IX-TYu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Format" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt6-IX-TYu">
                                 <rect key="frame" x="28" y="75" width="359" height="48"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="BSOMeter.png" translatesAutoresizingMaskIntoConstraints="NO" id="sqI-Zc-JQG">
-                                <rect key="frame" x="56" y="412" width="101" height="101"/>
-                                <animations/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Camera Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MZG-MX-J0m">
-                                <rect key="frame" x="242" y="412" width="135" height="101"/>
-                                <animations/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAs-iT-HtU">
-                                <rect key="frame" x="207" y="556" width="210" height="69"/>
+                                <rect key="frame" x="132" y="394" width="150" height="150"/>
                                 <animations/>
-                                <state key="normal" title="Take Photo" image="Camera Button.png"/>
+                                <state key="normal" image="CameraOption.png"/>
                                 <connections>
                                     <segue destination="RYF-Ad-8Q8" kind="show" id="wfE-QV-qPK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Input Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9J-Ny-Yyk">
+                                <rect key="frame" x="159" y="523" width="96" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Input Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9f-VZ-0cg">
+                                <rect key="frame" x="166" y="320" width="82" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Format" id="ATt-T5-Q8s"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="inputPhotoButt" destination="bAs-iT-HtU" id="0D8-5s-Cnt"/>
+                        <outlet property="inputPhotoLab" destination="B9J-Ny-Yyk" id="H0Z-Qb-4nR"/>
+                        <outlet property="inputTextButt" destination="VZe-jb-4Mg" id="4TN-tO-Y7w"/>
+                        <outlet property="inputTextLab" destination="D9f-VZ-0cg" id="Wlw-SJ-gFd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14E-OC-N4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="861" y="1140"/>
+            <point key="canvasLocation" x="501" y="2164"/>
         </scene>
         <!--Analyse Input-->
         <scene sceneID="K81-gS-B4O">
@@ -133,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xN-Q5-fqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1386" y="1158"/>
+            <point key="canvasLocation" x="1093" y="2164"/>
         </scene>
         <!--Results-->
         <scene sceneID="uGw-CB-GqI">
@@ -159,7 +176,7 @@
                                 <rect key="frame" x="110" y="64" width="169" height="58"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5q-lB-OhX" customClass="KDCircularProgress" customModule="BSOmeter" customModuleProvider="target">
@@ -226,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpx-yU-feR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976" y="1428"/>
+            <point key="canvasLocation" x="1590" y="2164"/>
         </scene>
         <!--Analyze Photo-->
         <scene sceneID="ajP-v6-xPu">
@@ -273,12 +290,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1325" y="1907"/>
+            <point key="canvasLocation" x="501" y="3093"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iWw-Se-MQk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="naA-N7-E7I" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="naA-N7-E7I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a31-zv-WzO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -292,21 +309,20 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEa-Xn-nMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235" y="1140"/>
+            <point key="canvasLocation" x="-117" y="2164"/>
         </scene>
     </scenes>
     <resources>
         <image name="AnalyzeTextButton.png" width="207" height="69"/>
-        <image name="BSOMeter.png" width="101" height="101"/>
         <image name="Camera Button.png" width="207" height="69"/>
-        <image name="Camera Icon.png" width="135" height="101"/>
+        <image name="CameraOption.png" width="96" height="76"/>
         <image name="CheckBSHomePage.png" width="414" height="88"/>
-        <image name="InputTextButton.png" width="207" height="69"/>
+        <image name="TextOption.png" width="96" height="78"/>
         <image name="TryAnotherStatement.png" width="414" height="88"/>
         <image name="next copy 4" width="207" height="69"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="b8X-4z-dYW"/>
-        <segue reference="5ZS-FU-ts4"/>
+        <segue reference="DkS-l2-uNQ"/>
+        <segue reference="JZw-xm-ldi"/>
     </inferredMetricsTieBreakers>
 </document>
