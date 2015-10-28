@@ -10,7 +10,7 @@ This app was made for the 2015 DubHacks competition in Seattle, WA. But this app
 
 Installation of Cocoapods (when building Xcode project, run pod install)
 
-API keys for the following APIs will be needed to run the app:
+### API keys for the following APIs will be needed to run the app:
 	* Algorithmia
 	* Parse
 	* Tornado Web Service
@@ -25,7 +25,7 @@ API keys for the following APIs will be needed to run the app:
 
 ## Authors
 
-###Contributors
+### Contributors
 	* Kimberly Lister
 	* Jules Mazur
 	* Shaheen Sharifian
@@ -34,6 +34,6 @@ API keys for the following APIs will be needed to run the app:
 	* Rosie Zou
 
 ## Credits
-	*Algorithmia
-	*Tornado Web Server
-	*OCR Tesseract
+	* Algorithmia
+	* Tornado Web Server
+	* OCR Tesseract
