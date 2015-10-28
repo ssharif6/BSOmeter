@@ -16,10 +16,15 @@ class ResultsPageViewController: UIViewController {
     @IBOutlet weak var LevelOfTruthLabel: UILabel!
     @IBOutlet weak var percentageWheel: KDCircularProgress!
     
+    let transitionManager = TransitionManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let xNumber = arc4random_uniform(23)
         var randomNum:Int = Int(xNumber)
+        
+        self.transitioningDelegate = transitionManager
+        
         setWheelProperties(randomNum)
         // Do any additional setup after loading the view.
     }

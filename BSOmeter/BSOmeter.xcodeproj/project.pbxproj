@@ -36,6 +36,7 @@
 		B244BF541BE041E6007DDD78 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244BF531BE041E6007DDD78 /* TransitionManager.swift */; settings = {ASSET_TAGS = (); }; };
 		B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D991B1BDD7480003CAC12 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B2E9A6411BE08F1500CD4179 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E9A6401BE08F1500CD4179 /* MainNavController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		B244BF531BE041E6007DDD78 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormatSelectViewController.swift; path = ../FormatSelectViewController.swift; sourceTree = "<group>"; };
 		B28D991B1BDD7480003CAC12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2E9A6401BE08F1500CD4179 /* MainNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
 		F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -197,6 +199,7 @@
 				856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */,
 				8564960D1BD4482B0066437F /* PhotoPoster.swift */,
 				B28D991B1BDD7480003CAC12 /* ViewController.swift */,
+				B2E9A6401BE08F1500CD4179 /* MainNavController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			files = (
 				B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */,
 				856495F71BD374AE0066437F /* RecordViewController.swift in Sources */,
+				B2E9A6411BE08F1500CD4179 /* MainNavController.swift in Sources */,
 				8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */,
 				B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */,
 				856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */,
