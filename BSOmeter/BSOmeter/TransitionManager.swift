@@ -28,7 +28,7 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
 //////////////////////////////////////////*****************//////////////////////////////////////////////////////
         
         if screens.from is ViewController {
-            let mainNavVC = !self.isPresenting ? screens.from as! MainNavController : screens.to as! MainNavController
+            let mainNavVC = !self.isPresenting ? screens.from as! MainNavigationController : screens.to as! MainNavigationController
             let bottomVC = !self.isPresenting ? screens.from as UIViewController : screens.to as UIViewController
         
             let mainNavV = mainNavVC.view
@@ -53,9 +53,9 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
             })
         }
         
-        if screens.from is MainNavController {
+        if screens.from is MainNavigationController {
             let topVC = !self.isPresenting ? screens.from as UIViewController : screens.to as UIViewController
-            let bottomVC = !self.isPresenting ? screens.from as! MainNavController : screens.to as UIViewController
+            let bottomVC = !self.isPresenting ? screens.from as! MainNavigationController : screens.to as UIViewController
             
             let topV = topVC.view
             let bottomV = bottomVC.view
@@ -107,7 +107,7 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
         }
         
         if screens.from is ResultsPageViewController {
-            let mainNavVC = !self.isPresenting ? screens.from as! MainNavController : screens.to as! MainNavController
+            let mainNavVC = !self.isPresenting ? screens.from as! MainNavigationController : screens.to as! MainNavigationController
             let bottomVC = !self.isPresenting ? screens.from as UIViewController : screens.to as UIViewController
             
             let mainNavV = mainNavVC.view
