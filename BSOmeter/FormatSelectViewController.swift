@@ -9,10 +9,26 @@
 import UIKit
 
 class FormatSelectViewController: UIViewController {
+    @IBOutlet var inputTextButt: UIButton!
+    @IBOutlet var inputPhotoButt: UIButton!
+    @IBOutlet var inputTextLab: UILabel!
+    @IBOutlet var inputPhotoLab: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.inputTextButt.frame.origin.x+=300
+        self.inputPhotoButt.frame.origin.x-=300
+        self.inputTextLab.frame.origin.x+=300
+        self.inputPhotoLab.frame.origin.x-=300
+        
+        UIView.animateWithDuration(0.5, animations: {
+            self.inputTextButt.frame.origin.x-=300
+            self.inputPhotoButt.frame.origin.x+=300
+            self.inputTextLab.frame.origin.x-=300
+            self.inputPhotoLab.frame.origin.x+=300
+        })
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,8 +36,6 @@ class FormatSelectViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
     /*
     // MARK: - Navigation
