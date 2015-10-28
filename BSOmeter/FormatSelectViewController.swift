@@ -9,13 +9,18 @@
 import UIKit
 
 class FormatSelectViewController: UIViewController {
+        
     @IBOutlet var inputTextButt: UIButton!
     @IBOutlet var inputPhotoButt: UIButton!
     @IBOutlet var inputTextLab: UILabel!
     @IBOutlet var inputPhotoLab: UILabel!
 
+    let transitionManager = TransitionManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.transitioningDelegate = transitionManager
         
         self.inputTextButt.frame.origin.x+=300
         self.inputPhotoButt.frame.origin.x-=300

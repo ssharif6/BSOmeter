@@ -11,11 +11,15 @@ import Parse
 
 class TextInputViewController: UIViewController, UITextViewDelegate {
 
+    let transitionManager = TransitionManager()
+    
     @IBOutlet weak var inputTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         inputTextView.delegate = self
         
+        self.transitioningDelegate = self.transitionManager
 
         // Do any additional setup after loading the view.
         inputTextView!.layer.borderWidth = 1

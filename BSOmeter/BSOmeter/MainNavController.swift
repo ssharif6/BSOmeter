@@ -1,35 +1,27 @@
 //
-//  ViewController.swift
+//  MainNavController.swift
 //  BSOmeter
 //
-//  Created by Adam Sloma on 10/25/15.
+//  Created by Adam Sloma on 10/27/15.
 //  Copyright © 2015 Dubhacks. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    @IBOutlet var bsLabel: UILabel!
-    @IBOutlet var bsButton: UIButton!
+class MainNavController: UINavigationController {
+
+    let transitionManager = TransitionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.transitioningDelegate = transitionManager
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func getRidOfElements() {
-        bsLabel.alpha = 0
-        bsButton.alpha = 0
-        
-        bsLabel = nil
-        bsButton = nil
     }
     
 
@@ -42,4 +34,5 @@ class ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 }
