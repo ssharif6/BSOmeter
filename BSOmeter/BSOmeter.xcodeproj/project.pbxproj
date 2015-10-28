@@ -20,7 +20,6 @@
 		856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FD1BD375A80066437F /* ResultsPageViewController.swift */; };
 		856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */; };
 		8564960C1BD4469E0066437F /* libCloudinary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8564960B1BD4469E0066437F /* libCloudinary.a */; };
-		8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564960D1BD4482B0066437F /* PhotoPoster.swift */; };
 		857CEFB41BE0952D00D4811E /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857CEFB31BE0952D00D4811E /* TesseractOCR.framework */; };
 		857CEFB61BE0955000D4811E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 857CEFB51BE0955000D4811E /* tessdata */; };
 		858812531BE0BFE00022247E /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858812521BE0BFE00022247E /* MainNavigationController.swift */; };
@@ -39,7 +38,7 @@
 		B244BF541BE041E6007DDD78 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244BF531BE041E6007DDD78 /* TransitionManager.swift */; };
 		B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */; };
 		B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D991B1BDD7480003CAC12 /* ViewController.swift */; };
-		B2AFFBA51BE0C5DD00E021CE /* analyze.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBA41BE0C5DD00E021CE /* analyze.png */; settings = {ASSET_TAGS = (); }; };
+		B2AFFBA51BE0C5DD00E021CE /* analyze.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBA41BE0C5DD00E021CE /* analyze.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +79,6 @@
 		856495FD1BD375A80066437F /* ResultsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsPageViewController.swift; sourceTree = "<group>"; };
 		856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnalysisViewController.swift; sourceTree = "<group>"; };
 		8564960B1BD4469E0066437F /* libCloudinary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCloudinary.a; sourceTree = "<group>"; };
-		8564960D1BD4482B0066437F /* PhotoPoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPoster.swift; sourceTree = "<group>"; };
 		857CEFB31BE0952D00D4811E /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		857CEFB51BE0955000D4811E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		858812521BE0BFE00022247E /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 				856495FB1BD375670066437F /* TextInputViewController.swift */,
 				856495FD1BD375A80066437F /* ResultsPageViewController.swift */,
 				856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */,
-				8564960D1BD4482B0066437F /* PhotoPoster.swift */,
 				B28D991B1BDD7480003CAC12 /* ViewController.swift */,
 				858812521BE0BFE00022247E /* MainNavigationController.swift */,
 			);
@@ -441,7 +438,6 @@
 			files = (
 				B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */,
 				856495F71BD374AE0066437F /* RecordViewController.swift in Sources */,
-				8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */,
 				858812531BE0BFE00022247E /* MainNavigationController.swift in Sources */,
 				B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */,
 				856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */,

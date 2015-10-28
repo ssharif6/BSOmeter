@@ -58,7 +58,8 @@ class PhotoAnalysisViewController: UIViewController, UINavigationControllerDeleg
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         pictureImageview.contentMode = .ScaleAspectFit
         pictureImageview.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-        analyzePhoto(pictureImageview.image!)
+        let selectedPhoto = info[UIImagePickerControllerOriginalImage] as! UIImage
+        analyzePhoto(selectedPhoto)
         
     }
     func analyzePhoto(image: UIImage) {
