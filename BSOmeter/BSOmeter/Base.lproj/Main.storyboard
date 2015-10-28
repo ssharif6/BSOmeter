@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Start Up-->
@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-117" y="1067"/>
+            <point key="canvasLocation" x="-117" y="1121"/>
         </scene>
         <!--Text Option-->
         <scene sceneID="Vwr-HG-XvS">
@@ -63,7 +63,7 @@
                                 <animations/>
                                 <state key="normal" image="TextOption.png"/>
                                 <connections>
-                                    <segue destination="xMj-Na-oYe" kind="show" id="3eg-PG-zC9"/>
+                                    <segue destination="xMj-Na-oYe" kind="presentation" modalPresentationStyle="overFullScreen" id="3eg-PG-zC9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Format" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt6-IX-TYu">
@@ -130,7 +130,7 @@
                                 <state key="normal" title="Analyse Text" image="AnalyzeTextButton.png"/>
                                 <connections>
                                     <action selector="analyzeText:" destination="xMj-Na-oYe" eventType="touchUpInside" id="fOo-Bn-KcB"/>
-                                    <segue destination="x3d-M8-Sjt" kind="show" identifier="toResultsSegue" id="DkS-l2-uNQ"/>
+                                    <segue destination="x3d-M8-Sjt" kind="presentation" identifier="toResultsSegue" modalPresentationStyle="overFullScreen" id="DkS-l2-uNQ"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Placeholder text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-6M-FxL">
@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xN-Q5-fqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093" y="2164"/>
+            <point key="canvasLocation" x="1123" y="1746"/>
         </scene>
         <!--Results-->
         <scene sceneID="uGw-CB-GqI">
@@ -169,7 +169,7 @@
                                 <animations/>
                                 <state key="normal" title="Try another statement" image="TryAnotherStatement.png"/>
                                 <connections>
-                                    <segue destination="wzj-yM-a6Q" kind="show" id="5ZS-FU-ts4"/>
+                                    <segue destination="naA-N7-E7I" kind="presentation" modalPresentationStyle="overFullScreen" id="Q5W-e6-hcK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAr-LO-c4Y">
@@ -243,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpx-yU-feR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="2164"/>
+            <point key="canvasLocation" x="1782" y="2164"/>
         </scene>
         <!--Analyze Photo-->
         <scene sceneID="ajP-v6-xPu">
@@ -290,12 +290,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="501" y="3093"/>
+            <point key="canvasLocation" x="1123" y="3095"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Navigation Controller-->
         <scene sceneID="iWw-Se-MQk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="naA-N7-E7I" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="naA-N7-E7I" customClass="MainNavigationController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a31-zv-WzO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -322,7 +322,7 @@
         <image name="next copy 4" width="207" height="69"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JZw-xm-ldi"/>
+        <segue reference="n8c-LF-blb"/>
         <segue reference="b8X-4z-dYW"/>
     </inferredMetricsTieBreakers>
 </document>
