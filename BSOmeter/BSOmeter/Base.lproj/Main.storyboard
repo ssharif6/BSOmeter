@@ -125,26 +125,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clg-Kt-Fuh">
-                                <rect key="frame" x="101" y="573" width="212" height="69"/>
+                                <rect key="frame" x="155" y="484" width="104" height="104"/>
                                 <animations/>
-                                <state key="normal" title="Analyse Text" image="AnalyzeTextButton.png"/>
+                                <state key="normal" image="analyze.png"/>
                                 <connections>
                                     <action selector="analyzeText:" destination="xMj-Na-oYe" eventType="touchUpInside" id="fOo-Bn-KcB"/>
                                     <segue destination="x3d-M8-Sjt" kind="presentation" identifier="toResultsSegue" modalPresentationStyle="overFullScreen" id="DkS-l2-uNQ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Placeholder text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-6M-FxL">
-                                <rect key="frame" x="0.0" y="64" width="414" height="466"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-6M-FxL">
+                                <rect key="frame" x="0.0" y="20" width="414" height="374"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Analyze Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfG-hN-FSb">
+                                <rect key="frame" x="159" y="596" width="97" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="analyzeTextButt" destination="clg-Kt-Fuh" id="f4e-sQ-api"/>
+                        <outlet property="analyzeTextLabel" destination="yfG-hN-FSb" id="tki-OJ-coW"/>
                         <outlet property="inputTextView" destination="fsq-6M-FxL" id="ikc-SG-ZDB"/>
                     </connections>
                 </viewController>
@@ -313,16 +323,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AnalyzeTextButton.png" width="207" height="69"/>
         <image name="Camera Button.png" width="207" height="69"/>
         <image name="CameraOption.png" width="96" height="76"/>
         <image name="CheckBSHomePage.png" width="414" height="88"/>
         <image name="TextOption.png" width="96" height="78"/>
         <image name="TryAnotherStatement.png" width="414" height="88"/>
+        <image name="analyze.png" width="96" height="96"/>
         <image name="next copy 4" width="207" height="69"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="n8c-LF-blb"/>
-        <segue reference="b8X-4z-dYW"/>
+        <segue reference="DkS-l2-uNQ"/>
     </inferredMetricsTieBreakers>
 </document>
