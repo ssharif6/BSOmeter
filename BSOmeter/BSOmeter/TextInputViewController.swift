@@ -15,12 +15,27 @@ class TextInputViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var inputTextView: UITextView!
     
+    @IBOutlet var analyzeTextButt: UIButton!
+    @IBOutlet var analyzeTextLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.inputTextView.alpha = 0
         inputTextView.delegate = self
         
         self.transitioningDelegate = self.transitionManager
 
+        self.analyzeTextButt.frame.origin.y-=350
+        self.analyzeTextLabel.frame.origin.y-=350
+        
+        UIView.animateWithDuration(0.5, animations: {
+            self.inputTextView.alpha = 1
+            
+            self.analyzeTextButt.frame.origin.y+=350
+            self.analyzeTextLabel.frame.origin.y+=350
+        })
+        
         // Do any additional setup after loading the view.
         inputTextView!.layer.borderWidth = 1
         inputTextView!.layer.borderColor = UIColor.blackColor().CGColor
