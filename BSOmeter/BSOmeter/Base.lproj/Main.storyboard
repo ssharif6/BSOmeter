@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--Start Up-->
@@ -16,11 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TxT-qg-rJ9" customClass="KASlideShow">
-                                <rect key="frame" x="0.0" y="0.0" width="836" height="736"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OttawaParlay.png" translatesAutoresizingMaskIntoConstraints="NO" id="pNW-U4-249">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WashingtonMonument.png" translatesAutoresizingMaskIntoConstraints="NO" id="K5W-Ra-ozk">
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MLK.png" translatesAutoresizingMaskIntoConstraints="NO" id="hHx-mq-7Xu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SupremeCourt.png" translatesAutoresizingMaskIntoConstraints="NO" id="OcT-v2-uql">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LincolnMemorial.png" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-6J-DFB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSO'Meter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="41" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-z2-eXa">
                                 <rect key="frame" x="19" y="62" width="377" height="97"/>
                                 <animations/>
@@ -29,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
-                                <rect key="frame" x="-1" y="324" width="415" height="88"/>
+                                <rect key="frame" x="0.0" y="648" width="415" height="88"/>
                                 <animations/>
                                 <state key="normal" title="Check BS" image="CheckBSHomePage.png"/>
                                 <connections>
@@ -43,9 +58,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="asssss" destination="TxT-qg-rJ9" id="xxa-dB-sVk"/>
+                        <outlet property="LincolnMemorialImage" destination="AZk-6J-DFB" id="gxt-OR-Mhp"/>
+                        <outlet property="MLKIMage" destination="hHx-mq-7Xu" id="4AY-zb-Dea"/>
+                        <outlet property="OttawaParlayImage" destination="pNW-U4-249" id="bLa-3r-5DM"/>
+                        <outlet property="WashingtonMonumentImage" destination="K5W-Ra-ozk" id="o1P-t4-ROG"/>
                         <outlet property="bsButton" destination="lwK-8T-M9F" id="h9O-bF-1Ji"/>
                         <outlet property="bsLabel" destination="tLq-z2-eXa" id="v53-AA-buD"/>
+                        <outlet property="supremeCourtImage" destination="OcT-v2-uql" id="qns-QD-EjH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -380,8 +399,13 @@
         <image name="Camera Button.png" width="207" height="69"/>
         <image name="CameraOption.png" width="96" height="76"/>
         <image name="CheckBSHomePage.png" width="414" height="88"/>
+        <image name="LincolnMemorial.png" width="1920" height="1080"/>
+        <image name="MLK.png" width="1125" height="854"/>
+        <image name="OttawaParlay.png" width="2000" height="1000"/>
+        <image name="SupremeCourt.png" width="2048" height="1360"/>
         <image name="TextOption.png" width="96" height="78"/>
         <image name="TryAnotherStatement.png" width="414" height="88"/>
+        <image name="WashingtonMonument.png" width="1536" height="2048"/>
         <image name="analyze.png" width="96" height="96"/>
         <image name="next copy 4" width="207" height="69"/>
     </resources>

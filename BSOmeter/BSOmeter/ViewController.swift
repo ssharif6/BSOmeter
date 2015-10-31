@@ -12,27 +12,73 @@ class ViewController: UIViewController {
     
     @IBOutlet var bsLabel: UILabel!
     @IBOutlet var bsButton: UIButton!
-    
-    @IBOutlet var slideShow : KASlideShow! //I'm so tired
-    
+    @IBOutlet weak var OttawaParlayImage: UIImageView!
+    @IBOutlet weak var WashingtonMonumentImage: UIImageView!
+    @IBOutlet weak var MLKIMage: UIImageView!
+    @IBOutlet weak var supremeCourtImage: UIImageView!
+    @IBOutlet weak var LincolnMemorialImage: UIImageView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //this can wait...
-        let ssResources = ["jeffmemorial.png", "mlk.png", "ottawaparlay.png", "supremecourt.png", "washingtonmonument.png"]
-        self.slideShow = KASlideShow()
-        self.slideShow.delay = 2
-        self.slideShow.transitionDuration = 0.5
-        self.slideShow.transitionType = KASlideShowTransitionType.Fade
-        self.slideShow.imagesContentMode = UIViewContentMode.ScaleAspectFill
-        self.slideShow.addImagesFromResources(ssResources)
-        
+        OttawaParlayImage.alpha = 0
+        WashingtonMonumentImage.alpha = 0
+        MLKIMage.alpha = 0
+        supremeCourtImage.alpha = 0
+        LincolnMemorialImage.alpha = 1
+        NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "firstPic", userInfo: nil, repeats: false)
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func firstPic() {
+        LincolnMemorialImage.alpha = 1
+        OttawaParlayImage.alpha = 0
+        UIView.animateWithDuration(1.5) { () -> Void in
+            UIViewAnimationCurve.EaseIn
+            self.OttawaParlayImage.alpha = 1
+            self.LincolnMemorialImage.alpha = 0
+        }
+        NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "secondPic", userInfo: nil, repeats: false)
+        
+    }
+    
+    func secondPic() {
+        OttawaParlayImage.alpha = 1
+        WashingtonMonumentImage.alpha = 0
+        UIView.animateWithDuration(1.5) { () -> Void in
+            UIViewAnimationCurve.EaseIn
+            self.WashingtonMonumentImage.alpha = 1
+            self.OttawaParlayImage.alpha = 0
+        }
+        NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "thirdPic", userInfo: nil, repeats: false)
+    }
+    
+    func thirdPic() {
+        WashingtonMonumentImage.alpha = 1
+        supremeCourtImage.alpha = 0
+        UIView.animateWithDuration(1.5) { () -> Void in
+            UIViewAnimationCurve.EaseIn
+            self.supremeCourtImage.alpha = 1
+            self.WashingtonMonumentImage.alpha = 0
+        }
+        NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "lastPic", userInfo: nil, repeats: false)
+
+    }
+    
+    func lastPic() {
+        supremeCourtImage.alpha = 1
+        LincolnMemorialImage.alpha = 0
+        UIView.animateWithDuration(1.5) { () -> Void in
+            UIViewAnimationCurve.EaseIn
+            self.LincolnMemorialImage.alpha = 1
+            self.supremeCourtImage.alpha = 0
+        }
+        NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "firstPic", userInfo: nil, repeats: false)
+
     }
     
     @IBAction func getRidOfElements() {

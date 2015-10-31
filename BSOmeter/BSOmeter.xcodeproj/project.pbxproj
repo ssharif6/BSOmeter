@@ -23,6 +23,11 @@
 		857CEFB41BE0952D00D4811E /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857CEFB31BE0952D00D4811E /* TesseractOCR.framework */; };
 		857CEFB61BE0955000D4811E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 857CEFB51BE0955000D4811E /* tessdata */; };
 		858812531BE0BFE00022247E /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858812521BE0BFE00022247E /* MainNavigationController.swift */; };
+		85A162521BE558BA00D33475 /* LincolnMemorial.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A1624D1BE558BA00D33475 /* LincolnMemorial.png */; };
+		85A162531BE558BA00D33475 /* MLK.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A1624E1BE558BA00D33475 /* MLK.png */; };
+		85A162541BE558BA00D33475 /* OttawaParlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A1624F1BE558BA00D33475 /* OttawaParlay.png */; };
+		85A162551BE558BA00D33475 /* SupremeCourt.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A162501BE558BA00D33475 /* SupremeCourt.png */; };
+		85A162561BE558BA00D33475 /* WashingtonMonument.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A162511BE558BA00D33475 /* WashingtonMonument.png */; };
 		B220732C1BE496AB00264B6D /* KASlideShow.m in Sources */ = {isa = PBXBuildFile; fileRef = B220732B1BE496AB00264B6D /* KASlideShow.m */; };
 		B244BF471BE03BA6007DDD78 /* AnalyzeTextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */; };
 		B244BF481BE03BA6007DDD78 /* BSOMeter.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3C1BE03BA6007DDD78 /* BSOMeter.png */; };
@@ -83,6 +88,11 @@
 		857CEFB31BE0952D00D4811E /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		857CEFB51BE0955000D4811E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		858812521BE0BFE00022247E /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		85A1624D1BE558BA00D33475 /* LincolnMemorial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LincolnMemorial.png; sourceTree = "<group>"; };
+		85A1624E1BE558BA00D33475 /* MLK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLK.png; sourceTree = "<group>"; };
+		85A1624F1BE558BA00D33475 /* OttawaParlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OttawaParlay.png; sourceTree = "<group>"; };
+		85A162501BE558BA00D33475 /* SupremeCourt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SupremeCourt.png; sourceTree = "<group>"; };
+		85A162511BE558BA00D33475 /* WashingtonMonument.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WashingtonMonument.png; sourceTree = "<group>"; };
 		B22073291BE496AA00264B6D /* BSOmeter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSOmeter-Bridging-Header.h"; sourceTree = "<group>"; };
 		B220732A1BE496AB00264B6D /* KASlideShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KASlideShow.h; sourceTree = "<group>"; };
 		B220732B1BE496AB00264B6D /* KASlideShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KASlideShow.m; sourceTree = "<group>"; };
@@ -227,6 +237,11 @@
 		B244BF3A1BE03B87007DDD78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				85A1624D1BE558BA00D33475 /* LincolnMemorial.png */,
+				85A1624E1BE558BA00D33475 /* MLK.png */,
+				85A1624F1BE558BA00D33475 /* OttawaParlay.png */,
+				85A162501BE558BA00D33475 /* SupremeCourt.png */,
+				85A162511BE558BA00D33475 /* WashingtonMonument.png */,
 				B2AFFBA41BE0C5DD00E021CE /* analyze.png */,
 				857CEFB51BE0955000D4811E /* tessdata */,
 				B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */,
@@ -363,8 +378,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B244BF4F1BE03BA6007DDD78 /* next copy 4.png in Resources */,
+				85A162521BE558BA00D33475 /* LincolnMemorial.png in Resources */,
 				857CEFB61BE0955000D4811E /* tessdata in Resources */,
 				B244BF4D1BE03BA6007DDD78 /* Green Thumbs Up True.png in Resources */,
+				85A162541BE558BA00D33475 /* OttawaParlay.png in Resources */,
 				855ECAAD1BD36AC300CD9264 /* LaunchScreen.storyboard in Resources */,
 				B244BF511BE03BA6007DDD78 /* TextOption.png in Resources */,
 				B244BF491BE03BA6007DDD78 /* Camera Button.png in Resources */,
@@ -372,12 +389,15 @@
 				B244BF471BE03BA6007DDD78 /* AnalyzeTextButton.png in Resources */,
 				B244BF4C1BE03BA6007DDD78 /* CheckBSHomePage.png in Resources */,
 				855ECAAA1BD36AC300CD9264 /* Assets.xcassets in Resources */,
+				85A162531BE558BA00D33475 /* MLK.png in Resources */,
 				B244BF501BE03BA6007DDD78 /* No Thumbs Down Bullshit.png in Resources */,
 				B244BF4A1BE03BA6007DDD78 /* Camera Icon.png in Resources */,
 				B2AFFBA51BE0C5DD00E021CE /* analyze.png in Resources */,
 				B244BF4B1BE03BA6007DDD78 /* CameraOption.png in Resources */,
+				85A162551BE558BA00D33475 /* SupremeCourt.png in Resources */,
 				B244BF481BE03BA6007DDD78 /* BSOMeter.png in Resources */,
 				B244BF4E1BE03BA6007DDD78 /* InputTextButton.png in Resources */,
+				85A162561BE558BA00D33475 /* WashingtonMonument.png in Resources */,
 				855ECAA81BD36AC300CD9264 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
