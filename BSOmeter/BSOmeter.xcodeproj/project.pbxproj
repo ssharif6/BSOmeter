@@ -23,6 +23,7 @@
 		857CEFB41BE0952D00D4811E /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857CEFB31BE0952D00D4811E /* TesseractOCR.framework */; };
 		857CEFB61BE0955000D4811E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 857CEFB51BE0955000D4811E /* tessdata */; };
 		858812531BE0BFE00022247E /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858812521BE0BFE00022247E /* MainNavigationController.swift */; };
+		B220732C1BE496AB00264B6D /* KASlideShow.m in Sources */ = {isa = PBXBuildFile; fileRef = B220732B1BE496AB00264B6D /* KASlideShow.m */; settings = {ASSET_TAGS = (); }; };
 		B244BF471BE03BA6007DDD78 /* AnalyzeTextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */; };
 		B244BF481BE03BA6007DDD78 /* BSOMeter.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3C1BE03BA6007DDD78 /* BSOMeter.png */; };
 		B244BF491BE03BA6007DDD78 /* Camera Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3D1BE03BA6007DDD78 /* Camera Button.png */; };
@@ -82,6 +83,9 @@
 		857CEFB31BE0952D00D4811E /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		857CEFB51BE0955000D4811E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		858812521BE0BFE00022247E /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		B22073291BE496AA00264B6D /* BSOmeter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSOmeter-Bridging-Header.h"; sourceTree = "<group>"; };
+		B220732A1BE496AB00264B6D /* KASlideShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KASlideShow.h; sourceTree = "<group>"; };
+		B220732B1BE496AB00264B6D /* KASlideShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KASlideShow.m; sourceTree = "<group>"; };
 		B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AnalyzeTextButton.png; sourceTree = "<group>"; };
 		B244BF3C1BE03BA6007DDD78 /* BSOMeter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BSOMeter.png; sourceTree = "<group>"; };
 		B244BF3D1BE03BA6007DDD78 /* Camera Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Camera Button.png"; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		855ECAA11BD36AC300CD9264 /* BSOmeter */ = {
 			isa = PBXGroup;
 			children = (
+				B22073281BE4963500264B6D /* Slide Show Resources */,
 				B244BF3A1BE03B87007DDD78 /* Resources */,
 				856495F81BD374C10066437F /* ViewControllers */,
 				855ECAA21BD36AC300CD9264 /* AppDelegate.swift */,
@@ -207,6 +212,16 @@
 				858812521BE0BFE00022247E /* MainNavigationController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B22073281BE4963500264B6D /* Slide Show Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B220732A1BE496AB00264B6D /* KASlideShow.h */,
+				B220732B1BE496AB00264B6D /* KASlideShow.m */,
+				B22073291BE496AA00264B6D /* BSOmeter-Bridging-Header.h */,
+			);
+			name = "Slide Show Resources";
 			sourceTree = "<group>";
 		};
 		B244BF3A1BE03B87007DDD78 /* Resources */ = {
@@ -441,6 +456,7 @@
 				858812531BE0BFE00022247E /* MainNavigationController.swift in Sources */,
 				B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */,
 				856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */,
+				B220732C1BE496AB00264B6D /* KASlideShow.m in Sources */,
 				855ECAA31BD36AC300CD9264 /* AppDelegate.swift in Sources */,
 				B244BF541BE041E6007DDD78 /* TransitionManager.swift in Sources */,
 				856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */,
@@ -586,6 +602,7 @@
 			baseConfigurationReference = 4D413BD498CB8A6207A09202 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -602,6 +619,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dubhacks.BSOmeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BSOmeter/BSOmeter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -610,6 +629,7 @@
 			baseConfigurationReference = 34A95F2A54DDA21E29B2BF26 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -626,6 +646,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dubhacks.BSOmeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BSOmeter/BSOmeter-Bridging-Header.h";
 			};
 			name = Release;
 		};
