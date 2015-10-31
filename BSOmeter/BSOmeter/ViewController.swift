@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  BSOmeter
 //
-//  Created by Adam Sloma on 10/25/15.
+//  Created by Shaheen Sharifian on 10/25/15.
 //  Copyright © 2015 Dubhacks. All rights reserved.
 //
 
