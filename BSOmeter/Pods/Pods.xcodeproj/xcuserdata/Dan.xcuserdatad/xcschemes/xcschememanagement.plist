@@ -34,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>TesseractOCRiOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -97,12 +102,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>BA80242E2D6A9D37359DD2A325DBBC5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C2B9E98228E08E96A1459F60CBA11698</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E030C375DDEF4CC56A705A921465FC5B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6457AB539C2E160F2CBB9EC8250BFE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6FF7D808337B5BEF65CFF6CC477A999</key>
 		<dict>
 			<key>primary</key>
 			<true/>
