@@ -16,6 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TxT-qg-rJ9" customClass="KASlideShow">
+                                <rect key="frame" x="0.0" y="0.0" width="836" height="736"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
+                                        <rect key="frame" x="0.0" y="324" width="415" height="88"/>
+                                        <animations/>
+                                        <state key="normal" title="Check BS" image="CheckBSHomePage.png"/>
+                                        <connections>
+                                            <action selector="getRidOfElements" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaT-Ad-1DR"/>
+                                            <segue destination="naA-N7-E7I" kind="presentation" modalPresentationStyle="overFullScreen" id="n8c-LF-blb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSO'Meter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="41" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-z2-eXa">
                                 <rect key="frame" x="19" y="62" width="377" height="97"/>
                                 <animations/>
@@ -23,21 +39,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
-                                <rect key="frame" x="-1" y="324" width="415" height="88"/>
-                                <animations/>
-                                <state key="normal" title="Check BS" image="CheckBSHomePage.png"/>
-                                <connections>
-                                    <action selector="getRidOfElements" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaT-Ad-1DR"/>
-                                    <segue destination="naA-N7-E7I" kind="presentation" modalPresentationStyle="overFullScreen" id="n8c-LF-blb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="asssss" destination="TxT-qg-rJ9" id="xxa-dB-sVk"/>
                         <outlet property="bsButton" destination="lwK-8T-M9F" id="h9O-bF-1Ji"/>
                         <outlet property="bsLabel" destination="tLq-z2-eXa" id="v53-AA-buD"/>
                     </connections>

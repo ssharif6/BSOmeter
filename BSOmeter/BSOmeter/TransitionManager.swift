@@ -131,12 +131,11 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
                     UIApplication.sharedApplication().keyWindow?.addSubview(screens.to.view)
             })
         }
-        
     }
     
     // return how many seconds the transiton animation will take
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.5
+        return 0.6
     }
     
     // MARK: UIViewControllerTransitioningDelegate protocol methods
