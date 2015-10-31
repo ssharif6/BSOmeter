@@ -20,7 +20,6 @@
 		856495FE1BD375A80066437F /* ResultsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FD1BD375A80066437F /* ResultsPageViewController.swift */; };
 		856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */; };
 		8564960C1BD4469E0066437F /* libCloudinary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8564960B1BD4469E0066437F /* libCloudinary.a */; };
-		8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564960D1BD4482B0066437F /* PhotoPoster.swift */; };
 		857CEFB41BE0952D00D4811E /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857CEFB31BE0952D00D4811E /* TesseractOCR.framework */; };
 		857CEFB61BE0955000D4811E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 857CEFB51BE0955000D4811E /* tessdata */; };
 		858812531BE0BFE00022247E /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858812521BE0BFE00022247E /* MainNavigationController.swift */; };
@@ -39,13 +38,7 @@
 		B244BF541BE041E6007DDD78 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244BF531BE041E6007DDD78 /* TransitionManager.swift */; };
 		B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */; };
 		B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D991B1BDD7480003CAC12 /* ViewController.swift */; };
-		B2AFFBA51BE0C5DD00E021CE /* analyze.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBA41BE0C5DD00E021CE /* analyze.png */; settings = {ASSET_TAGS = (); }; };
-		B2AFFBAA1BE0D64400E021CE /* KASlideShow.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AFFBA91BE0D64400E021CE /* KASlideShow.m */; settings = {ASSET_TAGS = (); }; };
-		B2AFFBB11BE0DA6F00E021CE /* jeffmemorial.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBAC1BE0DA6F00E021CE /* jeffmemorial.png */; settings = {ASSET_TAGS = (); }; };
-		B2AFFBB21BE0DA6F00E021CE /* mlk.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBAD1BE0DA6F00E021CE /* mlk.png */; settings = {ASSET_TAGS = (); }; };
-		B2AFFBB31BE0DA6F00E021CE /* ottawaparlay.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBAE1BE0DA6F00E021CE /* ottawaparlay.png */; settings = {ASSET_TAGS = (); }; };
-		B2AFFBB41BE0DA6F00E021CE /* supremecourt.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBAF1BE0DA6F00E021CE /* supremecourt.png */; settings = {ASSET_TAGS = (); }; };
-		B2AFFBB51BE0DA6F00E021CE /* washingtonmonument.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBB01BE0DA6F00E021CE /* washingtonmonument.png */; settings = {ASSET_TAGS = (); }; };
+		B2AFFBA51BE0C5DD00E021CE /* analyze.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBA41BE0C5DD00E021CE /* analyze.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +79,6 @@
 		856495FD1BD375A80066437F /* ResultsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsPageViewController.swift; sourceTree = "<group>"; };
 		856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnalysisViewController.swift; sourceTree = "<group>"; };
 		8564960B1BD4469E0066437F /* libCloudinary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCloudinary.a; sourceTree = "<group>"; };
-		8564960D1BD4482B0066437F /* PhotoPoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPoster.swift; sourceTree = "<group>"; };
 		857CEFB31BE0952D00D4811E /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		857CEFB51BE0955000D4811E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		858812521BE0BFE00022247E /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
@@ -106,14 +98,6 @@
 		B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormatSelectViewController.swift; path = ../FormatSelectViewController.swift; sourceTree = "<group>"; };
 		B28D991B1BDD7480003CAC12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2AFFBA41BE0C5DD00E021CE /* analyze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = analyze.png; sourceTree = "<group>"; };
-		B2AFFBA71BE0D64300E021CE /* BSOmeter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSOmeter-Bridging-Header.h"; sourceTree = "<group>"; };
-		B2AFFBA81BE0D64400E021CE /* KASlideShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KASlideShow.h; sourceTree = "<group>"; };
-		B2AFFBA91BE0D64400E021CE /* KASlideShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KASlideShow.m; sourceTree = "<group>"; };
-		B2AFFBAC1BE0DA6F00E021CE /* jeffmemorial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeffmemorial.png; sourceTree = "<group>"; };
-		B2AFFBAD1BE0DA6F00E021CE /* mlk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mlk.png; sourceTree = "<group>"; };
-		B2AFFBAE1BE0DA6F00E021CE /* ottawaparlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ottawaparlay.png; sourceTree = "<group>"; };
-		B2AFFBAF1BE0DA6F00E021CE /* supremecourt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = supremecourt.png; sourceTree = "<group>"; };
-		B2AFFBB01BE0DA6F00E021CE /* washingtonmonument.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = washingtonmonument.png; sourceTree = "<group>"; };
 		F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -180,7 +164,6 @@
 		855ECAA11BD36AC300CD9264 /* BSOmeter */ = {
 			isa = PBXGroup;
 			children = (
-				B2AFFBA61BE0D60600E021CE /* Slideshow Thing */,
 				B244BF3A1BE03B87007DDD78 /* Resources */,
 				856495F81BD374C10066437F /* ViewControllers */,
 				855ECAA21BD36AC300CD9264 /* AppDelegate.swift */,
@@ -220,7 +203,6 @@
 				856495FB1BD375670066437F /* TextInputViewController.swift */,
 				856495FD1BD375A80066437F /* ResultsPageViewController.swift */,
 				856495FF1BD375E70066437F /* PhotoAnalysisViewController.swift */,
-				8564960D1BD4482B0066437F /* PhotoPoster.swift */,
 				B28D991B1BDD7480003CAC12 /* ViewController.swift */,
 				858812521BE0BFE00022247E /* MainNavigationController.swift */,
 			);
@@ -230,7 +212,6 @@
 		B244BF3A1BE03B87007DDD78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B2AFFBAB1BE0DA5500E021CE /* Start Screen Images */,
 				B2AFFBA41BE0C5DD00E021CE /* analyze.png */,
 				857CEFB51BE0955000D4811E /* tessdata */,
 				B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */,
@@ -247,28 +228,6 @@
 				B244BF461BE03BA6007DDD78 /* TryAnotherStatement.png */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		B2AFFBA61BE0D60600E021CE /* Slideshow Thing */ = {
-			isa = PBXGroup;
-			children = (
-				B2AFFBA81BE0D64400E021CE /* KASlideShow.h */,
-				B2AFFBA91BE0D64400E021CE /* KASlideShow.m */,
-				B2AFFBA71BE0D64300E021CE /* BSOmeter-Bridging-Header.h */,
-			);
-			name = "Slideshow Thing";
-			sourceTree = "<group>";
-		};
-		B2AFFBAB1BE0DA5500E021CE /* Start Screen Images */ = {
-			isa = PBXGroup;
-			children = (
-				B2AFFBAC1BE0DA6F00E021CE /* jeffmemorial.png */,
-				B2AFFBAD1BE0DA6F00E021CE /* mlk.png */,
-				B2AFFBAE1BE0DA6F00E021CE /* ottawaparlay.png */,
-				B2AFFBAF1BE0DA6F00E021CE /* supremecourt.png */,
-				B2AFFBB01BE0DA6F00E021CE /* washingtonmonument.png */,
-			);
-			name = "Start Screen Images";
 			sourceTree = "<group>";
 		};
 		D62E5889D8A71E186AAC6C35 /* Pods */ = {
@@ -394,21 +353,16 @@
 				855ECAAD1BD36AC300CD9264 /* LaunchScreen.storyboard in Resources */,
 				B244BF511BE03BA6007DDD78 /* TextOption.png in Resources */,
 				B244BF491BE03BA6007DDD78 /* Camera Button.png in Resources */,
-				B2AFFBB51BE0DA6F00E021CE /* washingtonmonument.png in Resources */,
 				B244BF521BE03BA6007DDD78 /* TryAnotherStatement.png in Resources */,
 				B244BF471BE03BA6007DDD78 /* AnalyzeTextButton.png in Resources */,
-				B2AFFBB31BE0DA6F00E021CE /* ottawaparlay.png in Resources */,
 				B244BF4C1BE03BA6007DDD78 /* CheckBSHomePage.png in Resources */,
 				855ECAAA1BD36AC300CD9264 /* Assets.xcassets in Resources */,
 				B244BF501BE03BA6007DDD78 /* No Thumbs Down Bullshit.png in Resources */,
 				B244BF4A1BE03BA6007DDD78 /* Camera Icon.png in Resources */,
-				B2AFFBB41BE0DA6F00E021CE /* supremecourt.png in Resources */,
 				B2AFFBA51BE0C5DD00E021CE /* analyze.png in Resources */,
 				B244BF4B1BE03BA6007DDD78 /* CameraOption.png in Resources */,
 				B244BF481BE03BA6007DDD78 /* BSOMeter.png in Resources */,
 				B244BF4E1BE03BA6007DDD78 /* InputTextButton.png in Resources */,
-				B2AFFBB21BE0DA6F00E021CE /* mlk.png in Resources */,
-				B2AFFBB11BE0DA6F00E021CE /* jeffmemorial.png in Resources */,
 				855ECAA81BD36AC300CD9264 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,8 +438,6 @@
 			files = (
 				B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */,
 				856495F71BD374AE0066437F /* RecordViewController.swift in Sources */,
-				B2AFFBAA1BE0D64400E021CE /* KASlideShow.m in Sources */,
-				8564960E1BD4482B0066437F /* PhotoPoster.swift in Sources */,
 				858812531BE0BFE00022247E /* MainNavigationController.swift in Sources */,
 				B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */,
 				856496001BD375E70066437F /* PhotoAnalysisViewController.swift in Sources */,
@@ -634,7 +586,6 @@
 			baseConfigurationReference = 4D413BD498CB8A6207A09202 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -651,8 +602,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dubhacks.BSOmeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "BSOmeter/BSOmeter-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -661,7 +610,6 @@
 			baseConfigurationReference = 34A95F2A54DDA21E29B2BF26 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -678,7 +626,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dubhacks.BSOmeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "BSOmeter/BSOmeter-Bridging-Header.h";
 			};
 			name = Release;
 		};
