@@ -1,0 +1,23 @@
+INDEX VERSION 1.127+/Users/shaheensharifian/Desktop/BSOmeter/BSOmeter/Website String Extraction/.metadata/.plugins/org.eclipse.jdt.core
+3794497040.index
+2211732093.index
+1769317737.index
+4276456779.index
+2333164946.index
+2885545355.index
+1765565202.index
+3270581164.index
+3857710087.index
+1271342938.index
+2456149042.index
+411166081.index
+4259282187.index
+856423796.index
+3272856330.index
+3348459436.index
+3674352377.index
+2178737305.index
+1542969262.index
+31031388.index
+3212548302.index
+2793427791.index

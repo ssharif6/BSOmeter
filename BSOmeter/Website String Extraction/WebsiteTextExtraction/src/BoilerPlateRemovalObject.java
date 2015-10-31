@@ -26,7 +26,7 @@ public class BoilerPlateRemovalObject {
 		String extractedText = ArticleExtractor.INSTANCE.getText(this.url);
 		this.ExtractedString = extractedText;
 	}
-	
+	// A full-text extractor which extracts complete sentences and organizes the string by sentences.
 	public void extractSentences() throws BoilerpipeProcessingException {
 		String extractedSentences = ArticleSentencesExtractor.INSTANCE.getText(this.url);
 		this.ExtractedString = extractedSentences;
