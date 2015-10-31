@@ -13,19 +13,19 @@ class ViewController: UIViewController {
     @IBOutlet var bsLabel: UILabel!
     @IBOutlet var bsButton: UIButton!
     
-    @IBOutlet var asssss : KASlideShow! //I'm so tired
+    @IBOutlet var slideShow : KASlideShow! //I'm so tired
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //this can wait...
         let ssResources = ["jeffmemorial.png", "mlk.png", "ottawaparlay.png", "supremecourt.png", "washingtonmonument.png"]
-        self.asssss = KASlideShow()
-        self.asssss.delay = 2
-        self.asssss.transitionDuration = 0.5
-        self.asssss.transitionType = KASlideShowTransitionType.Fade
-        self.asssss.imagesContentMode = UIViewContentMode.ScaleAspectFill
-        self.asssss.addImagesFromResources(ssResources)
+        self.slideShow = KASlideShow()
+        self.slideShow.delay = 2
+        self.slideShow.transitionDuration = 0.5
+        self.slideShow.transitionType = KASlideShowTransitionType.Fade
+        self.slideShow.imagesContentMode = UIViewContentMode.ScaleAspectFill
+        self.slideShow.addImagesFromResources(ssResources)
         
         // Do any additional setup after loading the view.
     }

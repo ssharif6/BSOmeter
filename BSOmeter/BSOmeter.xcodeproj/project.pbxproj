@@ -24,11 +24,6 @@
 		857CEFB61BE0955000D4811E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 857CEFB51BE0955000D4811E /* tessdata */; };
 		858812531BE0BFE00022247E /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858812521BE0BFE00022247E /* MainNavigationController.swift */; };
 		B220732C1BE496AB00264B6D /* KASlideShow.m in Sources */ = {isa = PBXBuildFile; fileRef = B220732B1BE496AB00264B6D /* KASlideShow.m */; settings = {ASSET_TAGS = (); }; };
-		B22073331BE49AD100264B6D /* jeffmemorial.png in Resources */ = {isa = PBXBuildFile; fileRef = B220732E1BE49AD100264B6D /* jeffmemorial.png */; settings = {ASSET_TAGS = (); }; };
-		B22073341BE49AD100264B6D /* mlk.png in Resources */ = {isa = PBXBuildFile; fileRef = B220732F1BE49AD100264B6D /* mlk.png */; settings = {ASSET_TAGS = (); }; };
-		B22073351BE49AD100264B6D /* ottawaparlay.png in Resources */ = {isa = PBXBuildFile; fileRef = B22073301BE49AD100264B6D /* ottawaparlay.png */; settings = {ASSET_TAGS = (); }; };
-		B22073361BE49AD100264B6D /* supremecourt.png in Resources */ = {isa = PBXBuildFile; fileRef = B22073311BE49AD100264B6D /* supremecourt.png */; settings = {ASSET_TAGS = (); }; };
-		B22073371BE49AD100264B6D /* washingtonmonument.png in Resources */ = {isa = PBXBuildFile; fileRef = B22073321BE49AD100264B6D /* washingtonmonument.png */; settings = {ASSET_TAGS = (); }; };
 		B244BF471BE03BA6007DDD78 /* AnalyzeTextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */; };
 		B244BF481BE03BA6007DDD78 /* BSOMeter.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3C1BE03BA6007DDD78 /* BSOMeter.png */; };
 		B244BF491BE03BA6007DDD78 /* Camera Button.png in Resources */ = {isa = PBXBuildFile; fileRef = B244BF3D1BE03BA6007DDD78 /* Camera Button.png */; };
@@ -44,6 +39,11 @@
 		B244BF541BE041E6007DDD78 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244BF531BE041E6007DDD78 /* TransitionManager.swift */; };
 		B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */; };
 		B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D991B1BDD7480003CAC12 /* ViewController.swift */; };
+		B29F9C331BE4A7C600B8FDB0 /* jeffmemorial.png in Resources */ = {isa = PBXBuildFile; fileRef = B29F9C2E1BE4A7C600B8FDB0 /* jeffmemorial.png */; settings = {ASSET_TAGS = (); }; };
+		B29F9C341BE4A7C600B8FDB0 /* mlk.png in Resources */ = {isa = PBXBuildFile; fileRef = B29F9C2F1BE4A7C600B8FDB0 /* mlk.png */; settings = {ASSET_TAGS = (); }; };
+		B29F9C351BE4A7C600B8FDB0 /* ottawaparlay.png in Resources */ = {isa = PBXBuildFile; fileRef = B29F9C301BE4A7C600B8FDB0 /* ottawaparlay.png */; settings = {ASSET_TAGS = (); }; };
+		B29F9C361BE4A7C600B8FDB0 /* supremecourt.png in Resources */ = {isa = PBXBuildFile; fileRef = B29F9C311BE4A7C600B8FDB0 /* supremecourt.png */; settings = {ASSET_TAGS = (); }; };
+		B29F9C371BE4A7C600B8FDB0 /* washingtonmonument.png in Resources */ = {isa = PBXBuildFile; fileRef = B29F9C321BE4A7C600B8FDB0 /* washingtonmonument.png */; settings = {ASSET_TAGS = (); }; };
 		B2AFFBA51BE0C5DD00E021CE /* analyze.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBA41BE0C5DD00E021CE /* analyze.png */; };
 /* End PBXBuildFile section */
 
@@ -91,11 +91,6 @@
 		B22073291BE496AA00264B6D /* BSOmeter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSOmeter-Bridging-Header.h"; sourceTree = "<group>"; };
 		B220732A1BE496AB00264B6D /* KASlideShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KASlideShow.h; sourceTree = "<group>"; };
 		B220732B1BE496AB00264B6D /* KASlideShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KASlideShow.m; sourceTree = "<group>"; };
-		B220732E1BE49AD100264B6D /* jeffmemorial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeffmemorial.png; sourceTree = "<group>"; };
-		B220732F1BE49AD100264B6D /* mlk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mlk.png; sourceTree = "<group>"; };
-		B22073301BE49AD100264B6D /* ottawaparlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ottawaparlay.png; sourceTree = "<group>"; };
-		B22073311BE49AD100264B6D /* supremecourt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = supremecourt.png; sourceTree = "<group>"; };
-		B22073321BE49AD100264B6D /* washingtonmonument.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = washingtonmonument.png; sourceTree = "<group>"; };
 		B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AnalyzeTextButton.png; sourceTree = "<group>"; };
 		B244BF3C1BE03BA6007DDD78 /* BSOMeter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BSOMeter.png; sourceTree = "<group>"; };
 		B244BF3D1BE03BA6007DDD78 /* Camera Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Camera Button.png"; sourceTree = "<group>"; };
@@ -111,6 +106,11 @@
 		B244BF531BE041E6007DDD78 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormatSelectViewController.swift; path = ../FormatSelectViewController.swift; sourceTree = "<group>"; };
 		B28D991B1BDD7480003CAC12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B29F9C2E1BE4A7C600B8FDB0 /* jeffmemorial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeffmemorial.png; sourceTree = "<group>"; };
+		B29F9C2F1BE4A7C600B8FDB0 /* mlk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mlk.png; sourceTree = "<group>"; };
+		B29F9C301BE4A7C600B8FDB0 /* ottawaparlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ottawaparlay.png; sourceTree = "<group>"; };
+		B29F9C311BE4A7C600B8FDB0 /* supremecourt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = supremecourt.png; sourceTree = "<group>"; };
+		B29F9C321BE4A7C600B8FDB0 /* washingtonmonument.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = washingtonmonument.png; sourceTree = "<group>"; };
 		B2AFFBA41BE0C5DD00E021CE /* analyze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = analyze.png; sourceTree = "<group>"; };
 		F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -234,22 +234,14 @@
 			name = "Slide Show Resources";
 			sourceTree = "<group>";
 		};
-		B220732D1BE49AB100264B6D /* Slide Show Photos */ = {
-			isa = PBXGroup;
-			children = (
-				B220732E1BE49AD100264B6D /* jeffmemorial.png */,
-				B220732F1BE49AD100264B6D /* mlk.png */,
-				B22073301BE49AD100264B6D /* ottawaparlay.png */,
-				B22073311BE49AD100264B6D /* supremecourt.png */,
-				B22073321BE49AD100264B6D /* washingtonmonument.png */,
-			);
-			name = "Slide Show Photos";
-			sourceTree = "<group>";
-		};
 		B244BF3A1BE03B87007DDD78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B220732D1BE49AB100264B6D /* Slide Show Photos */,
+				B29F9C2E1BE4A7C600B8FDB0 /* jeffmemorial.png */,
+				B29F9C2F1BE4A7C600B8FDB0 /* mlk.png */,
+				B29F9C301BE4A7C600B8FDB0 /* ottawaparlay.png */,
+				B29F9C311BE4A7C600B8FDB0 /* supremecourt.png */,
+				B29F9C321BE4A7C600B8FDB0 /* washingtonmonument.png */,
 				B2AFFBA41BE0C5DD00E021CE /* analyze.png */,
 				857CEFB51BE0955000D4811E /* tessdata */,
 				B244BF3B1BE03BA6007DDD78 /* AnalyzeTextButton.png */,
@@ -391,21 +383,21 @@
 				855ECAAD1BD36AC300CD9264 /* LaunchScreen.storyboard in Resources */,
 				B244BF511BE03BA6007DDD78 /* TextOption.png in Resources */,
 				B244BF491BE03BA6007DDD78 /* Camera Button.png in Resources */,
-				B22073371BE49AD100264B6D /* washingtonmonument.png in Resources */,
+				B29F9C371BE4A7C600B8FDB0 /* washingtonmonument.png in Resources */,
 				B244BF521BE03BA6007DDD78 /* TryAnotherStatement.png in Resources */,
 				B244BF471BE03BA6007DDD78 /* AnalyzeTextButton.png in Resources */,
-				B22073351BE49AD100264B6D /* ottawaparlay.png in Resources */,
+				B29F9C351BE4A7C600B8FDB0 /* ottawaparlay.png in Resources */,
 				B244BF4C1BE03BA6007DDD78 /* CheckBSHomePage.png in Resources */,
 				855ECAAA1BD36AC300CD9264 /* Assets.xcassets in Resources */,
 				B244BF501BE03BA6007DDD78 /* No Thumbs Down Bullshit.png in Resources */,
 				B244BF4A1BE03BA6007DDD78 /* Camera Icon.png in Resources */,
-				B22073361BE49AD100264B6D /* supremecourt.png in Resources */,
+				B29F9C361BE4A7C600B8FDB0 /* supremecourt.png in Resources */,
 				B2AFFBA51BE0C5DD00E021CE /* analyze.png in Resources */,
 				B244BF4B1BE03BA6007DDD78 /* CameraOption.png in Resources */,
 				B244BF481BE03BA6007DDD78 /* BSOMeter.png in Resources */,
 				B244BF4E1BE03BA6007DDD78 /* InputTextButton.png in Resources */,
-				B22073341BE49AD100264B6D /* mlk.png in Resources */,
-				B22073331BE49AD100264B6D /* jeffmemorial.png in Resources */,
+				B29F9C341BE4A7C600B8FDB0 /* mlk.png in Resources */,
+				B29F9C331BE4A7C600B8FDB0 /* jeffmemorial.png in Resources */,
 				855ECAA81BD36AC300CD9264 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
