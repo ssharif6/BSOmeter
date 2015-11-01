@@ -82,7 +82,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func getRidOfElements() {
-        bsLabel.alpha = 0
         bsButton.alpha = 0
         
         bsLabel = nil

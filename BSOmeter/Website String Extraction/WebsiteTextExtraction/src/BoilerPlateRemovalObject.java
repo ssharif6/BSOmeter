@@ -1,4 +1,7 @@
-import java.net.URL;
+/*
+ * BoilerPlateRemoval Object. Call extractSentences to get in sentence form. 
+ */
+import java.net.URL; 
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.extractors.ArticleExtractor;
 import de.l3s.boilerpipe.extractors.ArticleSentencesExtractor;
