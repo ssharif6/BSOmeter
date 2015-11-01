@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
     </dependencies>
     <scenes>
         <!--Start Up-->
@@ -36,13 +36,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BSO'Meter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="41" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-z2-eXa">
-                                <rect key="frame" x="19" y="62" width="377" height="97"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="81"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
                                 <rect key="frame" x="0.0" y="648" width="415" height="88"/>
                                 <animations/>
@@ -52,6 +45,10 @@
                                     <segue destination="naA-N7-E7I" kind="presentation" modalPresentationStyle="overFullScreen" id="n8c-LF-blb"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="slideshow-logo-@1x" translatesAutoresizingMaskIntoConstraints="NO" id="XLC-ZO-nmT">
+                                <rect key="frame" x="120" y="88" width="175" height="181"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -63,7 +60,6 @@
                         <outlet property="OttawaParlayImage" destination="pNW-U4-249" id="bLa-3r-5DM"/>
                         <outlet property="WashingtonMonumentImage" destination="K5W-Ra-ozk" id="o1P-t4-ROG"/>
                         <outlet property="bsButton" destination="lwK-8T-M9F" id="h9O-bF-1Ji"/>
-                        <outlet property="bsLabel" destination="tLq-z2-eXa" id="v53-AA-buD"/>
                         <outlet property="supremeCourtImage" destination="OcT-v2-uql" id="qns-QD-EjH"/>
                     </connections>
                 </viewController>
@@ -408,9 +404,10 @@
         <image name="WashingtonMonument.png" width="1536" height="2048"/>
         <image name="analyze.png" width="96" height="96"/>
         <image name="next copy 4" width="207" height="69"/>
+        <image name="slideshow-logo-@1x" width="175" height="181"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="n8c-LF-blb"/>
-        <segue reference="DkS-l2-uNQ"/>
+        <segue reference="b8X-4z-dYW"/>
     </inferredMetricsTieBreakers>
 </document>
