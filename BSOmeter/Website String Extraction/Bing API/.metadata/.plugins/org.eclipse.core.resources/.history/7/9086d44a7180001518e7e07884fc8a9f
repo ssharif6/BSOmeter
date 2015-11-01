@@ -1,0 +1,10 @@
+// This is the client class that will gather all the urls from different search engines and websites
+public class NewsCompiler {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BingAPI bingApi = new BingAPI("Shaheen Sharifian");
+		bingApi.queryForUrls();
+	}
+
+}
