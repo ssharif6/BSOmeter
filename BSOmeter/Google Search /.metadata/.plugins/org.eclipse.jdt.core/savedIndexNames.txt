@@ -1,2 +1,0 @@
-INDEX VERSION 1.127+/Users/shaheensharifian/Desktop/BSOmeter/BSOmeter/Google Search /.metadata/.plugins/org.eclipse.jdt.core
-3474667093.index
