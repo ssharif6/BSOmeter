@@ -32,6 +32,7 @@ Installation of Cocoapods (when building Xcode project, run pod install)
 	* Adam Sloma
 	* Daniel Tran
 	* Rosie Zou
+	* Katherine Xiang
 
 ## Credits
 	* Algorithmia
