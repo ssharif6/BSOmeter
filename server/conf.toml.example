@@ -1,0 +1,11 @@
+[db]
+host = ""
+port = 5432
+user = ""
+pass = ""
+name = "postgres"  # database name
+
+[api]
+	[algorithmia]
+	key = ""
+
