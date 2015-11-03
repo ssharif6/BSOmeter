@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Start Up-->
@@ -16,37 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OttawaParlay.png" translatesAutoresizingMaskIntoConstraints="NO" id="pNW-U4-249">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SupremeCourt.png" translatesAutoresizingMaskIntoConstraints="NO" id="OcT-v2-uql">
+                                <rect key="frame" x="-327" y="0.0" width="1000" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MLK.png" translatesAutoresizingMaskIntoConstraints="NO" id="hHx-mq-7Xu">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WashingtonMonument.png" translatesAutoresizingMaskIntoConstraints="NO" id="K5W-Ra-ozk">
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OttawaParlay.png" translatesAutoresizingMaskIntoConstraints="NO" id="pNW-U4-249">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LincolnMemorial.png" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-6J-DFB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WashingtonMonument.png" translatesAutoresizingMaskIntoConstraints="NO" id="K5W-Ra-ozk">
                                 <rect key="frame" x="0.0" y="0.0" width="415" height="736"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MLK.png" translatesAutoresizingMaskIntoConstraints="NO" id="hHx-mq-7Xu">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SupremeCourt.png" translatesAutoresizingMaskIntoConstraints="NO" id="OcT-v2-uql">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LincolnMemorial.png" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-6J-DFB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <animations/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwK-8T-M9F">
-                                <rect key="frame" x="0.0" y="648" width="415" height="88"/>
+                                <rect key="frame" x="72" y="567" width="270" height="88"/>
                                 <animations/>
-                                <state key="normal" title="Check BS" image="CheckBSHomePage.png"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Check BS">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="getRidOfElements" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaT-Ad-1DR"/>
                                     <segue destination="naA-N7-E7I" kind="presentation" modalPresentationStyle="overFullScreen" id="n8c-LF-blb"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="slideshow-logo-@1x" translatesAutoresizingMaskIntoConstraints="NO" id="XLC-ZO-nmT">
-                                <rect key="frame" x="120" y="88" width="175" height="181"/>
+                                <rect key="frame" x="120" y="152" width="175" height="181"/>
                                 <animations/>
                             </imageView>
                         </subviews>
@@ -394,7 +398,6 @@
     <resources>
         <image name="Camera Button.png" width="207" height="69"/>
         <image name="CameraOption.png" width="96" height="76"/>
-        <image name="CheckBSHomePage.png" width="414" height="88"/>
         <image name="LincolnMemorial.png" width="1920" height="1080"/>
         <image name="MLK.png" width="1125" height="854"/>
         <image name="OttawaParlay.png" width="2000" height="1000"/>
