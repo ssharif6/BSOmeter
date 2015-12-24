@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Start Up-->
@@ -127,7 +127,7 @@
                                 <animations/>
                                 <state key="normal" image="CameraOption.png"/>
                                 <connections>
-                                    <segue destination="RYF-Ad-8Q8" kind="show" id="wfE-QV-qPK"/>
+                                    <segue destination="nHC-ik-y3H" kind="presentation" modalPresentationStyle="overFullScreen" id="94v-Vs-iEU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Input Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9J-Ny-Yyk">
@@ -191,6 +191,13 @@
                                                 <blurEffect style="light"/>
                                             </vibrancyEffect>
                                         </visualEffectView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-6M-FxL">
+                                            <rect key="frame" x="0.0" y="21" width="414" height="374"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
                                     </subviews>
                                     <animations/>
                                 </view>
@@ -206,13 +213,6 @@
                                     <segue destination="x3d-M8-Sjt" kind="presentation" identifier="toResultsSegue" modalPresentationStyle="overFullScreen" id="DkS-l2-uNQ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-6M-FxL">
-                                <rect key="frame" x="0.0" y="20" width="414" height="374"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Analyze Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfG-hN-FSb">
                                 <rect key="frame" x="159" y="596" width="97" height="21"/>
                                 <animations/>
@@ -328,52 +328,74 @@
             </objects>
             <point key="canvasLocation" x="1782" y="2164"/>
         </scene>
-        <!--Analyze Photo-->
-        <scene sceneID="ajP-v6-xPu">
+        <!--Photo Analysis View Controller-->
+        <scene sceneID="69S-13-Gyr">
             <objects>
-                <viewController title="Analyze Photo" id="RYF-Ad-8Q8" customClass="PhotoAnalysisViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nHC-ik-y3H" customClass="PhotoAnalysisViewController" customModule="BSOmeter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gbj-uv-uCt"/>
-                        <viewControllerLayoutGuide type="bottom" id="G8l-dy-7vR"/>
+                        <viewControllerLayoutGuide type="top" id="RCS-Yf-5eO"/>
+                        <viewControllerLayoutGuide type="bottom" id="2pc-AH-PgL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="N1D-Cx-gre">
+                    <view key="view" contentMode="scaleToFill" id="oGm-Vf-CM8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBH-hp-eg6">
-                                <rect key="frame" x="0.0" y="64" width="414" height="483"/>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RvI-RN-LrF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="yk2-RH-gSx">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tTl-5z-1ix">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="paA-cM-g5D">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <animations/>
+                                            </view>
+                                            <animations/>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZ3-8Y-Lpc">
+                                            <rect key="frame" x="185" y="544" width="55" height="55"/>
+                                            <animations/>
+                                            <state key="normal" image="yes.png"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeT-wU-GDm">
+                                            <rect key="frame" x="185" y="544" width="55" height="55"/>
+                                            <animations/>
+                                            <state key="normal" title="Button" image="circle-stroke.png"/>
+                                            <connections>
+                                                <action selector="takePhoto:" destination="nHC-ik-y3H" eventType="touchUpInside" id="dOL-FC-7sW"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2w-Jh-yuE">
+                                            <rect key="frame" x="185" y="544" width="55" height="55"/>
+                                            <animations/>
+                                            <state key="normal" image="no.png"/>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                </view>
                                 <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mml-lP-gtf">
-                                <rect key="frame" x="12" y="619" width="175" height="69"/>
-                                <animations/>
-                                <state key="normal" title="Take Pic" image="Camera Button.png"/>
-                                <connections>
-                                    <action selector="takePhoto:" destination="RYF-Ad-8Q8" eventType="touchUpInside" id="380-Tj-Mm2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7W-8c-fYT">
-                                <rect key="frame" x="225" y="619" width="179" height="69"/>
-                                <animations/>
-                                <state key="normal" title="Analyze" image="next copy 4"/>
-                                <connections>
-                                    <action selector="AnalyzeImageAction:" destination="RYF-Ad-8Q8" eventType="touchUpInside" id="mdB-Cp-8Kc"/>
-                                    <segue destination="x3d-M8-Sjt" kind="show" id="b8X-4z-dYW"/>
-                                </connections>
-                            </button>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Picture" id="9gI-RF-q3F"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="pictureImageview" destination="EBH-hp-eg6" id="5iV-HT-BCy"/>
+                        <outlet property="cancelButt" destination="Y2w-Jh-yuE" id="9Eu-b2-QLH"/>
+                        <outlet property="confirmButt" destination="QZ3-8Y-Lpc" id="QgU-8h-1lK"/>
+                        <outlet property="takePicButt" destination="EeT-wU-GDm" id="RDx-3l-P7a"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-iJ-Qix" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P7i-xF-lVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1123" y="3095"/>
+            <point key="canvasLocation" x="891" y="3108"/>
         </scene>
         <!--Main Navigation Controller-->
         <scene sceneID="iWw-Se-MQk">
@@ -396,7 +418,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Camera Button.png" width="207" height="69"/>
         <image name="CameraOption.png" width="96" height="76"/>
         <image name="CheckBSHomePage" width="200" height="43"/>
         <image name="LincolnMemorial.png" width="1920" height="1080"/>
@@ -407,11 +428,12 @@
         <image name="TryAnotherStatement.png" width="414" height="88"/>
         <image name="WashingtonMonument.png" width="1536" height="2048"/>
         <image name="analyze.png" width="96" height="96"/>
-        <image name="next copy 4" width="207" height="69"/>
+        <image name="circle-stroke.png" width="1000" height="1000"/>
+        <image name="no.png" width="1000" height="1000"/>
         <image name="slideshow-logo-@1x" width="175" height="181"/>
+        <image name="yes.png" width="1000" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="n8c-LF-blb"/>
-        <segue reference="DkS-l2-uNQ"/>
+        <segue reference="Q5W-e6-hcK"/>
     </inferredMetricsTieBreakers>
 </document>

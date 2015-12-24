@@ -45,6 +45,9 @@
 		B28202E71BDCAA0400159F52 /* FormatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */; };
 		B28D991D1BDD7480003CAC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D991B1BDD7480003CAC12 /* ViewController.swift */; };
 		B2AFFBA51BE0C5DD00E021CE /* analyze.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AFFBA41BE0C5DD00E021CE /* analyze.png */; };
+		B2CCD74E1C2BE7030035BC1E /* no.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CCD74C1C2BE7030035BC1E /* no.png */; settings = {ASSET_TAGS = (); }; };
+		B2CCD74F1C2BE7030035BC1E /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CCD74D1C2BE7030035BC1E /* yes.png */; settings = {ASSET_TAGS = (); }; };
+		B2CCD7511C2BE7240035BC1E /* circle-stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CCD7501C2BE7240035BC1E /* circle-stroke.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,9 @@
 		B28202E61BDCAA0400159F52 /* FormatSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormatSelectViewController.swift; path = ../FormatSelectViewController.swift; sourceTree = "<group>"; };
 		B28D991B1BDD7480003CAC12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2AFFBA41BE0C5DD00E021CE /* analyze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = analyze.png; sourceTree = "<group>"; };
+		B2CCD74C1C2BE7030035BC1E /* no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no.png; sourceTree = "<group>"; };
+		B2CCD74D1C2BE7030035BC1E /* yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yes.png; sourceTree = "<group>"; };
+		B2CCD7501C2BE7240035BC1E /* circle-stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-stroke.png"; sourceTree = "<group>"; };
 		F5CBE5E2F4D7DE4A005223E7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -237,6 +243,9 @@
 		B244BF3A1BE03B87007DDD78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B2CCD7501C2BE7240035BC1E /* circle-stroke.png */,
+				B2CCD74C1C2BE7030035BC1E /* no.png */,
+				B2CCD74D1C2BE7030035BC1E /* yes.png */,
 				85A1624D1BE558BA00D33475 /* LincolnMemorial.png */,
 				85A1624E1BE558BA00D33475 /* MLK.png */,
 				85A1624F1BE558BA00D33475 /* OttawaParlay.png */,
@@ -380,6 +389,7 @@
 				B244BF4F1BE03BA6007DDD78 /* next copy 4.png in Resources */,
 				85A162521BE558BA00D33475 /* LincolnMemorial.png in Resources */,
 				857CEFB61BE0955000D4811E /* tessdata in Resources */,
+				B2CCD74F1C2BE7030035BC1E /* yes.png in Resources */,
 				B244BF4D1BE03BA6007DDD78 /* Green Thumbs Up True.png in Resources */,
 				85A162541BE558BA00D33475 /* OttawaParlay.png in Resources */,
 				855ECAAD1BD36AC300CD9264 /* LaunchScreen.storyboard in Resources */,
@@ -388,11 +398,13 @@
 				B244BF521BE03BA6007DDD78 /* TryAnotherStatement.png in Resources */,
 				B244BF471BE03BA6007DDD78 /* AnalyzeTextButton.png in Resources */,
 				B244BF4C1BE03BA6007DDD78 /* CheckBSHomePage.png in Resources */,
+				B2CCD7511C2BE7240035BC1E /* circle-stroke.png in Resources */,
 				855ECAAA1BD36AC300CD9264 /* Assets.xcassets in Resources */,
 				85A162531BE558BA00D33475 /* MLK.png in Resources */,
 				B244BF501BE03BA6007DDD78 /* No Thumbs Down Bullshit.png in Resources */,
 				B244BF4A1BE03BA6007DDD78 /* Camera Icon.png in Resources */,
 				B2AFFBA51BE0C5DD00E021CE /* analyze.png in Resources */,
+				B2CCD74E1C2BE7030035BC1E /* no.png in Resources */,
 				B244BF4B1BE03BA6007DDD78 /* CameraOption.png in Resources */,
 				85A162551BE558BA00D33475 /* SupremeCourt.png in Resources */,
 				B244BF481BE03BA6007DDD78 /* BSOMeter.png in Resources */,
